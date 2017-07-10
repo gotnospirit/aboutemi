@@ -1,0 +1,47 @@
+header {
+  height: 5em;
+  position: fixed;
+  z-index: 2;
+  background-color: #FCF4E7;
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: calc(50% - (30px / 2));
+  left: calc(50% - (197px / 2));
+  width: 197px;
+  height: 30px;
+}
+
+h1 a {
+  text-indent: -1000em;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  background: url(images/logo_header.png) no-repeat 50% 50%;
+  width: 197px;
+  height: 30px;
+  border-radius: 0;
+}
+
+nav {
+  text-align: right;
+  padding: 1em 0;
+  width: 70%;
+  height: 5em;
+  line-height: 2em;
+  margin: 0 auto;
+}
+
+nav a {
+  display: inline-block;
+  width: 6em;
+  text-align: center;
+  padding: .5em;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

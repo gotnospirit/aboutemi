@@ -1,0 +1,50 @@
+#footer {
+  padding: 4em 0;
+  position: relative;
+  background: url(images/logo_footer.png) no-repeat 50% 50%;
+}
+
+#footer > div {
+  width: 70%;
+  height: 1em;
+  margin: 0 auto;
+  position: relative;
+}
+
+#footer a {
+  color: black;
+  margin: 0 .5em;
+}
+
+#footer address {
+  font-style: normal;
+  position: absolute;
+  left: 0;
+}
+
+#footer ul,
+#footer #scroll_top {
+  position: absolute;
+  right: 0;
+}
+
+#footer address,
+#footer ul {
+  width: 33%;
+  display: inline-block;
+}
+
+#footer ul li {
+  display: inline;
+}
+
+#footer #scroll_top {
+  background: url(images/scroll_to_top.png) no-repeat 0 0;
+  width: 14px;
+  height: 35px;
+  top: -10px;
+}
+
+#footer #scroll_top:hover {
+  cursor: pointer;
+}

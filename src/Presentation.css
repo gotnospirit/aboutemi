@@ -1,0 +1,29 @@
+#presentation {
+  /*max-width: 1280px;*/
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: url(images/degrade.png) no-repeat 50% bottom;
+}
+
+#presentation p {
+  font-size: 150%;
+  text-align: left;
+  position: absolute;
+  top: 45%;
+  right: 1.5em;
+  line-height: 1.5em;
+}
+
+#presentation p strong {
+  font-size: 1.3em;
+  background-color: #fff;
+  padding: .2em .5em;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#presentation p span > span {
+  display: block;
+}
