@@ -6,6 +6,10 @@ header {
   width: 100%;
 }
 
+#homepage header {
+  background: url(images/logo_header.png) no-repeat 50% 50% #FCF4E7;
+}
+
 h1 {
   position: absolute;
   top: calc(50% - (30px / 2));
@@ -16,13 +20,10 @@ h1 {
 
 h1 a {
   text-indent: -1000em;
-  background-repeat: no-repeat;
-  background-position: 0 0;
   display: inline-block;
   background: url(images/logo_header.png) no-repeat 50% 50%;
   width: 197px;
   height: 30px;
-  border-radius: 0;
 }
 
 nav {

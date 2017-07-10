@@ -5,12 +5,16 @@ import InternalLink from './InternalLink'
 import EmailLink from './EmailLink'
 import './Header.css'
 
-export default () => (
+export default ({ is_homepage=false }) => (
   <header>
-    <h1><Link to="/">Back to homepage</Link></h1>
+    {(!is_homepage)
+      ? (<h1><Link to="/">Back to homepage</Link></h1>)
+      : null}
     <nav>
-      <InternalLink href="#works" label="works" />
-      <InternalLink href="#about" label="about" />
+      {(is_homepage) 
+        ? <InternalLink href="#works" label="works" />
+        : <Link to="/works">works</Link>}
+      <Link to="/about">about</Link>
       <ExternalLink href="http://www.inestimable.me/" label="my blog" />
       <EmailLink address="emi.tan@gmail.com" label="contact" />
     </nav>

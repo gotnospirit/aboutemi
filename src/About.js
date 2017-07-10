@@ -1,17 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Header from './Header'
-import Presentation from './Presentation'
-import Works from './Works'
+import AboutMe from './AboutMe'
+import Services from './Services'
 import Footer from './Footer'
-import './Homepage.css'
 
 export default () => (
-  <div id="homepage">
+  <div id="about">
     <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
-    <Header is_homepage={true}/>
-    <Presentation/>
-    <Works/>
+    <Header/>
+    <AboutMe/>
+    <Services/>
     <Footer/>
   </div>
 )

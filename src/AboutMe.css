@@ -1,0 +1,40 @@
+#aboutme {
+  height: 100vh;
+  background-color: #fff;
+}
+
+#aboutme {
+  /*max-width: 1280px;*/
+  width: 70%;
+  /*height: 100%;*/
+  margin: 0 auto;
+  position: relative;
+  /*background: url(images/degrade.png) no-repeat 50% bottom;*/
+  background: url(images/7up.png) no-repeat 100% 50%;
+}
+
+#aboutme p {
+  font-size: 140%;
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  /*right: 1.5em;*/
+  line-height: 1.5em;
+}
+
+#aboutme p strong {
+  font-size: 1.3em;
+  background-color: black;
+  color: white;
+  padding: .2em .5em;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#aboutme p a {
+  color: #D86550;
+}
+
+#aboutme p span > span {
+  display: block;
+}

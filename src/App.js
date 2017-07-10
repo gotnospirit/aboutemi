@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Homepage from './Homepage';
+import About from './About';
 import Camera from './Camera';
 import './App.css';
 
@@ -12,6 +13,7 @@ export default () => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Switch>
           <Route exact path='/' component={Homepage} />
+          <Route exact path='/about' component={About} />
           <Route component={NotFound} />
         </Switch>
       </Camera>

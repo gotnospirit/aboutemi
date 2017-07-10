@@ -3,7 +3,6 @@ import MultilineText from './MultilineText'
 import './Presentation.css'
 
 export default () => {
-  const greeting = 'Hi.'
   const description = [
     'I\'m Emilie Tan, Digital Art Director',
     'based in Paris, France and I\'m willing',
@@ -12,7 +11,7 @@ export default () => {
   
   return (<section id="presentation">
     <p>
-      <strong>{greeting}</strong>
+      <strong>Hi.</strong>
       <MultilineText description={description}/>
     </p>
   </section>)

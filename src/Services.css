@@ -1,0 +1,49 @@
+#services {
+  height: calc(100vh - 14em);
+  background-color: #FAF9F5;
+}
+
+#services > div {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 5em;
+  line-height: 2em;
+}
+
+#services a {
+  color: black;
+}
+
+#services ul {
+  display: inline-block;
+  width: 50%;
+}
+
+#services ul li {
+  display: inline-block;
+  width: 15em;
+}
+
+#services address {
+  font-style: normal;
+  display: inline-block;
+  width: 50%;
+}
+
+#services address,
+#services address a {
+  color: #D86550;
+}
+
+#services address a {
+  font-weight: bold;
+}
+
+#services address a[href^="tel:"] {
+  font-weight: normal;
+}
+
+#services address span {
+  display: block;
+}
