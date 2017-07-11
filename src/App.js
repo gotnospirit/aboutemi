@@ -14,7 +14,7 @@ export default () => (
   <Router>
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
-        <Header is_homepage={'/' === location.pathname} selected={location.pathname}/>
+        <Header pathname={location.pathname}/>
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route exact path='/about' component={About} />

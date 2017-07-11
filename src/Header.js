@@ -5,22 +5,24 @@ import InternalLink from './InternalLink'
 import EmailLink from './EmailLink'
 import './Header.css'
 
-const renderLink = (href, title, selected) => {
-  return (<Link to={href} className={href === selected ? 'selected' : null}>{title}</Link>)
+const renderLink = (href, title, current_path) => {
+  return (<Link to={href} className={0 === current_path.indexOf(href) ? 'selected' : null}>{title}</Link>)
 }
 
-export default ({ is_homepage=false, selected=null }) => (
-  <header>
+export default ({ pathname }) => {
+  const is_homepage = '/' === pathname
+
+  return (<header>
     {(!is_homepage)
       ? (<h1><Link to="/">Back to homepage</Link></h1>)
       : null}
     <nav>
       {(is_homepage) 
         ? <InternalLink href="#works" label="works" />
-        : renderLink('/works', 'works', selected)}
-      {renderLink('/about', 'about', selected)}
+        : renderLink('/works', 'works', pathname)}
+      {renderLink('/about', 'about', pathname)}
       <ExternalLink href="http://www.inestimable.me/" label="my blog" />
       <EmailLink address="emi.tan@gmail.com" label="contact" />
     </nav>
-  </header>
-)
+  </header>)
+}
