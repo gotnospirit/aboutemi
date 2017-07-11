@@ -6,7 +6,7 @@ header {
   background: url(images/logo_header.png) no-repeat 50% 50% #FCF4E7;
 }
 
-h1 {
+header h1 {
   position: absolute;
   top: calc(50% - (30px / 2));
   left: calc(50% - (197px / 2));
@@ -14,14 +14,14 @@ h1 {
   height: 30px;
 }
 
-h1 a {
+header h1 a {
   text-indent: -1000em;
   display: inline-block;
   width: 197px;
   height: 30px;
 }
 
-nav {
+header nav {
   text-align: right;
   padding: 1em 0;
   width: 70%;
@@ -30,13 +30,13 @@ nav {
   margin: 0 auto;
 }
 
-nav a {
+header nav a {
   display: inline-block;
   width: 5em;
   text-align: center;
   padding: .5em;
 }
 
-nav a.selected {
+header nav a.selected {
   font-weight: 700;
 }

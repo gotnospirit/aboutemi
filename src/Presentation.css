@@ -1,6 +1,6 @@
 #presentation {
   width: 70%;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
   position: relative;
   background: url(images/degrade.png) no-repeat 50% bottom;
