@@ -4,13 +4,10 @@
 }
 
 #aboutme {
-  /*max-width: 1280px;*/
   width: 70%;
-  /*height: 100%;*/
   margin: 0 auto;
   position: relative;
-  /*background: url(images/degrade.png) no-repeat 50% bottom;*/
-  background: url(images/7up.png) no-repeat 100% 50%;
+  background: url(images/tshirt.png) no-repeat 100% 50%;
 }
 
 #aboutme p {
@@ -18,7 +15,6 @@
   text-align: left;
   position: absolute;
   top: 40%;
-  /*right: 1.5em;*/
   line-height: 1.5em;
 }
 
