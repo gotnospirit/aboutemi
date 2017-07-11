@@ -2,6 +2,7 @@ import React from 'react'
 import EmailLink from './EmailLink'
 import PhoneLink from './PhoneLink'
 import ExternalLink from './ExternalLink'
+import TextCarousel from './TextCarousel'
 import './Services.css'
 
 const renderServices = (items) => {
@@ -36,5 +37,6 @@ export default () => {
         <span><PhoneLink {...phone}/></span>
       </address>
     </div>
+    <TextCarousel />
   </section>)
 }
