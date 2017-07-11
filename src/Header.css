@@ -1,5 +1,5 @@
 header {
-  height: 5em;
+  height: 5rem;
   position: fixed;
   z-index: 2;
   background-color: #FCF4E7;
@@ -39,7 +39,10 @@ nav a {
   width: 6em;
   text-align: center;
   padding: .5em;
-  color: black;
+}
+
+nav a.selected {
+  font-weight: 700;
 }
 
 nav a:hover {

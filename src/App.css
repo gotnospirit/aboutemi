@@ -1,25 +1,4 @@
-/*@font-face {
-    font-family: 'sofia_prolight';
-    src: url('fonts/SofiaProLight-webfont.eot');
-    src: url('fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-p1xshq');
-	src:url('fonts/icomoon.eot?#iefix-p1xshq') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-p1xshq') format('woff'),
-		url('fonts/icomoon.ttf?-p1xshq') format('truetype'),
-		url('fonts/icomoon.svg?-p1xshq#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}*/
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700');
 
 * {
     margin: 0;
@@ -34,14 +13,16 @@ html, body {
 }
 
 html {
-    font-family: 'sofia_prolight', Arial;
-    font-size: 14px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
 }
 
 body {
     text-align: center;
+    color: #272727;
 }
 
 a {
     text-decoration: none;
+    color: #272727;
 }

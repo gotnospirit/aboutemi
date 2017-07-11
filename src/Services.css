@@ -1,5 +1,5 @@
 #services {
-  height: calc(100vh - 14em);
+  height: calc(100vh - 13rem);
   background-color: #FAF9F5;
 }
 
@@ -8,11 +8,12 @@
   margin: 0 auto;
   text-align: left;
   padding-top: 5em;
-  line-height: 2em;
+  line-height: 1.87rem; /* 30px; */
+  font-weight: 300;
 }
 
-#services a {
-  color: black;
+#services h3 {
+  font-weight: 700;
 }
 
 #services ul {
@@ -33,15 +34,15 @@
 
 #services address,
 #services address a {
-  color: #D86550;
+  color: #d8664e;
 }
 
 #services address a {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #services address a[href^="tel:"] {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 #services address span {

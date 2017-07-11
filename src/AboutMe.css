@@ -11,24 +11,24 @@
 }
 
 #aboutme p {
-  font-size: 140%;
   text-align: left;
   position: absolute;
   top: 40%;
-  line-height: 1.5em;
+  line-height: 1.87rem; /* 30px; */
+  font-weight: 300;
 }
 
 #aboutme p strong {
-  font-size: 1.3em;
-  background-color: black;
-  color: white;
+  font-size: 2.31rem; /* 37px; */
+  background-color: #272727;
+  color: #fff;
   padding: .2em .5em;
   display: inline-block;
-  margin-bottom: .5em;
+  font-weight: 700;
 }
 
 #aboutme p a {
-  color: #D86550;
+  color: #d8664e;
 }
 
 #aboutme p span > span {
