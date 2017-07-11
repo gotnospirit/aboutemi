@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Homepage from './Homepage'
 import About from './About'
+import Works from './Works'
 import Camera from './Camera'
 import './App.css'
 
@@ -14,6 +15,7 @@ export default () => (
         <Switch>
           <Route exact path='/' render={() => (<Homepage pathname={location.pathname}/>)} />
           <Route exact path='/about' render={() => (<About pathname={location.pathname}/>)} />
+          <Route exact path='/works' render={() => (<Works pathname={location.pathname}/>)} />
           <Route component={NotFound} />
         </Switch>
       </Camera>
