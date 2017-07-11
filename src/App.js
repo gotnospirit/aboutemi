@@ -12,8 +12,8 @@ export default () => (
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Switch>
-          <Route exact path='/' component={Homepage} />
-          <Route exact path='/about' component={About} />
+          <Route exact path='/' render={() => (<Homepage pathname={location.pathname}/>)} />
+          <Route exact path='/about' render={() => (<About pathname={location.pathname}/>)} />
           <Route component={NotFound} />
         </Switch>
       </Camera>

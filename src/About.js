@@ -5,10 +5,10 @@ import AboutMe from './AboutMe'
 import Services from './Services'
 import Footer from './Footer'
 
-export default () => (
+export default ({ pathname }) => (
   <div id="about">
     <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
-    <Header/>
+    <Header selected={pathname}/>
     <AboutMe/>
     <Services/>
     <Footer/>

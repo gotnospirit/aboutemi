@@ -6,10 +6,10 @@ import Works from './Works'
 import Footer from './Footer'
 import './Homepage.css'
 
-export default () => (
+export default ({ pathname }) => (
   <div id="homepage">
     <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
-    <Header is_homepage={true}/>
+    <Header is_homepage={true} selected={pathname}/>
     <Presentation/>
     <Works/>
     <Footer/>
