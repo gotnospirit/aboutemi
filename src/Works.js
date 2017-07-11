@@ -6,7 +6,7 @@ import Footer from './Footer'
 import './Works.css'
 
 export default ({ pathname }) => (
-  <div id="homepage">
+  <div id="works">
     <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
     <Header selected={pathname}/>
     <Thumbs/>
