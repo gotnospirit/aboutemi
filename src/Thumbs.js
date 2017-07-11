@@ -1,14 +1,14 @@
 import React from 'react'
-import Work from './Work'
+import Thumb from './Thumb'
 import slug from 'slug'
 import Masonry from 'react-masonry-component'
-import './Works.css'
+import './Thumbs.css'
 
-const renderWorks = (items) => {
+const renderThumbs = (items) => {
   return items.map(item => {
     const id = slug(item.name, { lower: true })
     
-    return (<Work key={item.name} id={id} {...item} />)
+    return (<Thumb key={item.name} id={id} {...item} />)
   })
 }
 
@@ -73,9 +73,9 @@ export default () => {
       image: '/images/thumbs/generale_optique.jpg'
   }]
 
-  return (<section id="works">
+  return (<section id="thumbs">
     <div>
-      <Masonry options={MASONRY_OPTIONS}>{renderWorks(projects)}</Masonry>
+      <Masonry options={MASONRY_OPTIONS}>{renderThumbs(projects)}</Masonry>
     </div>
   </section>)
 }

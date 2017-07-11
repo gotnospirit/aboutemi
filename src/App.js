@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Homepage from './Homepage';
-import About from './About';
-import Camera from './Camera';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Homepage from './Homepage'
+import About from './About'
+import Camera from './Camera'
+import './App.css'
 
-const NotFound = () => (<h1>404... This page is not found!</h1>);
+const NotFound = () => (<h1>404... This page is not found!</h1>)
 
 export default () => (
   <Router>
