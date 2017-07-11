@@ -56,23 +56,6 @@ export default class extends Component
       current : current,
       displayed : current > 0
     });
-
-    // var trigger = scroll.trigger,
-    //     displayed = scroll.displayed,
-    //     doc = document.documentElement;
-
-    // if (trigger) 
-    // {
-    //   var max_width = parseInt(getComputedStyle(document.documentElement).width, 10),
-    //       content_width = parseInt(getComputedStyle(document.querySelector('#works div')).width, 10),
-    //       x = ((max_width - content_width) / 2 - 60);
-
-    //   if (x < 0) 
-    //   {
-    //     x = 0;
-    //   }
-    //   trigger.style.right = x + 'px';
-    // }
   }
 
   scrollFrame() 

@@ -2,11 +2,7 @@ header {
   height: 5rem;
   position: fixed;
   z-index: 2;
-  background-color: #FCF4E7;
   width: 100%;
-}
-
-header {
   background: url(images/logo_header.png) no-repeat 50% 50% #FCF4E7;
 }
 
@@ -36,15 +32,11 @@ nav {
 
 nav a {
   display: inline-block;
-  width: 6em;
+  width: 5em;
   text-align: center;
   padding: .5em;
 }
 
 nav a.selected {
   font-weight: 700;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
