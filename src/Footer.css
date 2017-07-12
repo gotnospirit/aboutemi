@@ -17,10 +17,6 @@
   margin: 0 .5em;
 }
 
-#footer a:hover {
-  font-weight: 600;
-}
-
 #footer address {
   font-style: normal;
   position: absolute;
