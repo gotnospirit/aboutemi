@@ -1,9 +1,8 @@
 header {
-  height: 5rem;
   position: fixed;
   z-index: 2;
   width: 100%;
-  background: url(images/logo_header.png) no-repeat 50% 50% #FCF4E7;
+  background-color: #FCF4E7;
 }
 
 header h1 {
@@ -23,20 +22,48 @@ header h1 a {
 
 header nav {
   text-align: right;
-  padding: 1em 0;
-  width: 70%;
-  height: 5em;
-  line-height: 2em;
   margin: 0 auto;
 }
 
 header nav a {
-  display: inline-block;
-  width: 5em;
-  text-align: center;
-  padding: .5em;
+  margin: 0 .5em;
 }
 
 header nav a.selected {
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-image: url(images/logo_header.png);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 6rem;
+  }
+
+  header nav {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 5rem;
+  }
+
+  header nav {
+    width: 70%;
+    height: 100%;
+    background: url(images/logo_header.png) no-repeat 0 50%;
+  }
+
+  header nav a {
+    display: inline-block;
+    width: 5em;
+    text-align: center;
+    margin-top: 1.2rem;
+    padding: .5em;
+  }
 }

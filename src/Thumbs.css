@@ -8,10 +8,12 @@
   width: 70%;
   max-width: 1280px;
   margin: 0 auto;
+  column-width: 280px;
 }
 
 #thumbs a {
-  width: 280px;
+  width: 100%;
+  display: inline-block;
   margin: 50px 0;
 }
 
@@ -27,4 +29,21 @@
 
 #thumbs figcaption {
   margin-top: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+  #thumbs > div {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 1;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #thumbs > div {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }

@@ -1,17 +1,14 @@
 #presentation {
-  width: 70%;
   height: 100vh;
   margin: 0 auto;
   position: relative;
   background: url(images/degrade.png) no-repeat 50% bottom;
+  padding-top: 8rem;
 }
 
 #presentation p {
   font-size: 1.25rem; /* 20px; */
   text-align: left;
-  position: absolute;
-  top: 45%;
-  left: calc(50% + 8em);
   line-height: 1.87rem; /* 30px; */
   font-weight: 300;
 }
@@ -27,4 +24,19 @@
 
 #presentation p span > span {
   display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  #presentation {
+    width: 70%;
+  }
+
+  #presentation p {
+    position: absolute;
+    top: 45%;
+    left: calc(50% + 8em);
+  }
 }

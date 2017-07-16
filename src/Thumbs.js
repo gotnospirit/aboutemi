@@ -1,7 +1,6 @@
 import React from 'react'
 import Thumb from './Thumb'
 import slug from 'slug'
-import Masonry from 'react-masonry-component'
 import './Thumbs.css'
 
 const renderThumbs = (items) => {
@@ -10,12 +9,6 @@ const renderThumbs = (items) => {
     
     return (<Thumb key={item.name} id={id} {...item} />)
   })
-}
-
-const MASONRY_OPTIONS = {
-  horizontalOrder : true,
-  fitWidth : true,
-  gutter: 100
 }
 
 export default () => {
@@ -75,7 +68,7 @@ export default () => {
 
   return (<section id="thumbs">
     <div>
-      <Masonry options={MASONRY_OPTIONS}>{renderThumbs(projects)}</Masonry>
+      {renderThumbs(projects)}
     </div>
   </section>)
 }

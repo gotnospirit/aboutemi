@@ -6,7 +6,6 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-helmet": "4",
-    "react-masonry-component": "^5.0.7",
     "react-router-dom": "^4.1.1",
     "react-snapshot": "^1.1.0",
     "slug": "^0.9.1"
