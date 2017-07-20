@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Homepage from './Homepage'
 import About from './About'
 import Works from './Works'
+import Work from './Work'
 import Camera from './Camera'
 import './App.css'
 
@@ -19,6 +20,7 @@ export default () => (
           <Route exact path='/' component={Homepage} />
           <Route exact path='/about' component={About} />
           <Route exact path='/works' component={Works} />
+          <Route path="/works/:id" render={({ match }) => (<Work id={match.params.id}/>)}/>
           <Route component={NotFound} />
         </Switch>
         <Footer/>

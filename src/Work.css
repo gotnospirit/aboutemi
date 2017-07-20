@@ -1,0 +1,189 @@
+#work {
+  background-color: white;
+}
+
+#work section {
+  width: 100%;
+}
+
+#work section > div {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#work section figure {
+  margin: 0 auto;
+}
+
+#work section figure img {
+  width: 100%;
+}
+
+#work article h2,
+#work article h4 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#work article h3 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.56rem;
+}
+
+#work article h4 {
+  color: #626262;
+}
+
+#work article h2,
+#work article h3 {
+  text-transform: uppercase;
+}
+
+#work article {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#work article span > span {
+  display: block;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+#work section div > h3 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#work ul {
+  color: #626262;
+  position: relative;
+  list-style: none;
+}
+
+#work ul li a {
+  display: inline-block;
+  line-height: 2.18rem;
+  position: relative;
+}
+
+#previous_work a:before,
+#next_work a:before {
+  content: '';
+  background: url(images/scroll_to_top.png) no-repeat 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  transform-origin: 50%;
+}
+
+#previous_work a:before {
+  transform: rotateZ(-90deg);
+  left: -2.5rem;
+}
+
+#next_work a:before {
+  transform: rotateZ(90deg);  
+  right: -2.5rem;
+}
+
+#all_works {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+  #work {
+    padding-top: 6rem;
+  }
+  
+  #work section > div {
+    padding: 2rem 0;
+    width: 90%;
+  }
+
+  #work section figure {
+    width: 100%;
+  }
+  
+  #work section div > h3 {
+    margin-bottom: 2rem;
+  }
+
+  #work ul {
+    margin-top: 2rem;
+  }
+
+  #work ul li {
+    width: 50%;
+  }
+  
+  #previous_work {
+    float: left;
+  }
+
+  #next_work {
+    float: right;
+  }
+
+  #previous_work,
+  #next_work {
+    margin-bottom: 2rem;
+  }
+
+  #all_works {
+    clear: both;
+    margin: 0 25%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #work {
+    padding-top: 5rem;
+  }
+
+  #work section > div {
+    padding: 4rem 0;
+    width: 70%;
+  }
+  
+  #work section figure {
+    width: 80%;
+  }
+  
+  #work section div > h3 {
+    margin-bottom: 4rem;
+  }
+
+  #work article {
+    width: 60%;
+  }
+
+  #work ul {
+    margin-top: 4rem;
+  }
+
+  #work ul li {
+    width: 30%;
+  }
+  
+  #previous_work,
+  #next_work {
+    position: absolute;
+    top: 0;
+  }
+
+  #previous_work {
+    left: 0;
+  }
+
+  #next_work {
+    right: 0;
+  }
+
+  #all_works {
+    margin: 0 35%;
+  }
+}
