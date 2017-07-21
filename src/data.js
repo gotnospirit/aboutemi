@@ -1,4 +1,25 @@
-const projects = [
+const arrange = (projects) => {
+  if (!window.matchMedia) {
+    return projects
+  }
+
+  if (!window.matchMedia('(min-width: 1024px)').matches) {
+    return projects
+  }
+
+  let result = [
+    [], [], []
+  ]
+  const max = projects.length
+  const nb_columns = result.length
+
+  for (let i = 0; i < max; ++i) {
+    result[i % nb_columns].push(projects[i])
+  }
+  return [].concat.apply([], result)
+}
+
+const projects = arrange([
   {
       name : 'Restaurant Crissier',
       position : 'art direction, website',
@@ -84,7 +105,7 @@ const projects = [
       position : 'webdesign, newsletters campaignes',
       image : '/images/thumbs/generale_optique.jpg'
   }
-]
+])
 
 export {
   projects

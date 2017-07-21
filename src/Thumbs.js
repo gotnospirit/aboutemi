@@ -3,11 +3,7 @@ import Thumb from './Thumb'
 import { projects } from './data'
 import './Thumbs.css'
 
-const renderThumbs = (items) => {
-  return items.map(item => {
-    return (<Thumb key={item.name} {...item} />)
-  })
-}
+const renderThumbs = (items) => items.map(item => <Thumb key={item.name} {...item} />)
 
 export default () => {
   return (<section id="thumbs">
