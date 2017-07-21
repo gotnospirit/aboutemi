@@ -2,6 +2,7 @@ import React from 'react'
 import EmailLink from './EmailLink'
 import PhoneLink from './PhoneLink'
 import ExternalLink from './ExternalLink'
+import { footer } from './data'
 import './Footer.css'
 
 const renderSocials = (items) => {
@@ -19,17 +20,7 @@ const onScrollToTop = (e) => {
 }
 
 export default () => {
-  const address = 'emi.tan@gmail.com'
-  const phone = {
-    number : '+33689750218',
-    label : '+33 (0)6 89 75 02 18'
-  }
-  const socials = [
-    { url : 'http://fr.linkedin.com/in/emilietan', title : 'Linkedin' },
-    { url : 'https://twitter.com/inStimable', title : 'Twitter' },
-    { url : 'http://fr.pinterest.com/eterrestres/', title : 'Pinterest' },
-    { url : 'https://www.tumblr.com/blog/roastedbyemi', title : 'Tumblr' }
-  ]
+  const { address, phone, socials } = footer;
 
   return (<section id="footer">
       <div>

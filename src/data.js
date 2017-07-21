@@ -107,6 +107,70 @@ const projects = arrange([
   }
 ])
 
+const about_me = {
+  description : [
+    'I\'m a French independent Digital Art Director. I create brand identities,',
+    'websites/mobile interfaces, digital campaign... I am curious and love',
+    'to improve your most beautiful stories. I\'m available for selective',
+    'projects and collaborations. Feel free to send me an email.'
+  ],
+  urls : {
+    'email' : 'emi.tan@gmail.com'
+  }
+}
+
+const footer = {
+  address : 'emi.tan@gmail.com',
+  phone : {
+    number : '+33689750218',
+    label : '+33 (0)6 89 75 02 18'
+  },
+  socials : [
+    {
+       url : 'http://fr.linkedin.com/in/emilietan',
+       title : 'Linkedin'
+    }, {
+      url : 'https://twitter.com/inStimable',
+      title : 'Twitter'
+    }, {
+      url : 'http://fr.pinterest.com/eterrestres/',
+      title : 'Pinterest'
+    }, {
+      url : 'https://www.tumblr.com/blog/roastedbyemi',
+      title : 'Tumblr'
+    }
+  ]
+}
+
+const home = {
+  description : [
+    'I\'m Emilie Tan, Digital Art Director',
+    'based in Paris, France and I\'m willing',
+    'to work everywhere in the world.'
+  ]
+}
+
+const services = {
+  items : [
+    'Art Direction',
+    'UX/UI design',
+    'Web design',
+    'Mobile design',
+    'Branding',
+    'Sketches / illustrations'
+  ],
+  resume : 'http://www.aboutemi.com/pdf/resume_etan.pdf',
+  address : 'emi.tan@gmail.com',
+  phone : {
+    number : '+33689750218',
+    label : '+33 6 89 75 02 18'
+  }
+}
+
 export {
-  projects
+  projects,
+  about_me,
+  footer,
+  home,
+  services
 }

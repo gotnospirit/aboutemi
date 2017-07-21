@@ -3,6 +3,7 @@ import EmailLink from './EmailLink'
 import PhoneLink from './PhoneLink'
 import ExternalLink from './ExternalLink'
 import TextCarousel from './TextCarousel'
+import { services } from './data'
 import './Services.css'
 
 const renderServices = (items) => {
@@ -12,25 +13,12 @@ const renderServices = (items) => {
 }
 
 export default () => {
-  const services = [
-    'Art Direction',
-    'UX/UI design',
-    'Web design',
-    'Mobile design',
-    'Branding',
-    'Sketches / illustrations'
-  ]
-  const resume = 'http://www.aboutemi.com/pdf/resume_etan.pdf'
-  const address = 'emi.tan@gmail.com'
-  const phone = {
-    number : '+33689750218',
-    label : '+33 6 89 75 02 18'
-  }
+  const { items, resume, address, phone } = services
 
   return (<section id="services">
     <div>
       <h3>Services</h3>
-      {renderServices(services)}
+      {renderServices(items)}
       <address>
         <span>Download my resume <ExternalLink href={resume} label="here" /></span>
         <span><EmailLink address={address}/></span>
