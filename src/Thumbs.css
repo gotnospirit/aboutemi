@@ -14,7 +14,7 @@
 #thumbs a {
   width: 100%;
   display: inline-block;
-  margin: 50px 0;
+  margin: 3rem 0;
 }
 
 #thumbs a:hover span {
