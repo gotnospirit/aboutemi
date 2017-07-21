@@ -7,9 +7,32 @@ import About from './About'
 import Works from './Works'
 import Work from './Work'
 import Camera from './Camera'
+import NotFound from './NotFound'
+import { projects } from './data'
+import slug from 'slug'
 import './App.css'
 
-const NotFound = () => (<h1>404... This page is not found!</h1>)
+const getCurrentProjectDetails = (id) => {
+  for (let i = 0, max = projects.length; i < max; ++i) {
+    const project = projects[i]
+    const project_id = slug(project.name, { lower: true })
+
+    if (project_id === id) {
+      return project.details
+    }
+  }
+  return null
+}
+
+const getPreviousProject = (id) => {
+  return null
+}
+
+const getNextProject = (id) => {
+  return null
+}
+
+const renderNotFound = () => <Route component={NotFound} status={404} />
 
 export default () => (
   <Router>
@@ -20,8 +43,16 @@ export default () => (
           <Route exact path='/' component={Homepage} />
           <Route exact path='/about' component={About} />
           <Route exact path='/works' component={Works} />
-          <Route path="/works/:id" render={({ match }) => (<Work id={match.params.id}/>)}/>
-          <Route component={NotFound} />
+          <Route path="/works/:id" render={({ match }) => {
+            let id = match.params.id
+            let project = getCurrentProjectDetails(id)
+
+            if (!project) {
+              return renderNotFound()
+            }
+            return <Work details={project} previous_project={getPreviousProject(id)} next_project={getNextProject(id)} />
+          }} />
+          {renderNotFound()}
         </Switch>
         <Footer/>
       </Camera>

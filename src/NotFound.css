@@ -1,0 +1,24 @@
+#scroll_top {
+  display: none;
+}
+
+#not_found {
+  height: calc(100vh - 8rem);
+}
+
+#not_found p {
+  height: 100%;
+  line-height: calc(100vh - 8rem);
+}
+
+@media only screen and (max-width: 1024px) {
+  #not_found {
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #not_found {
+    padding-top: 5rem;
+  }
+}

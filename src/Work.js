@@ -54,6 +54,10 @@ const renderPresentation = (value) => {
 }
 
 const renderProject = (items, previous, next) => {
+  if (!items) {
+    return null
+  }
+
   let max = items.length
   
   return items.map((item, index) => (
@@ -88,46 +92,11 @@ const renderNav = (previous, next, is_last) => {
     </ul>)
 }
 
-export default ({ id }) => { 
-  this.items = [
-    {
-      figures : [
-        '/images/works/project01.jpg'
-      ]
-    },
-    {
-      background : '#F3F2F2',
-      presentation : {
-        client : 'Agence soon by kaliop',
-        title : 'Jb Martin',
-        text : [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-        ],
-        credits : 'CRÉDITS PHOTOS : Jb Martin'
-      }
-    },
-    {
-      figures : [
-        '/images/works/project02.jpg'
-      ]
-    },
-    {
-      background : '#F3F2F2',
-      title : 'Mobile',
-      figures : [
-        '/images/works/project03.jpg',
-        '/images/works/project04.jpg'
-      ]
-    }
-  ]
-  this.previous = null
-  this.next = null
-
+export default ({ details, previous_project, next_project }) => {
   return (
     <div id="work">
       <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
-      {renderProject(this.items, this.previous, this.next)}
+      {renderProject(details, previous_project, next_project)}
     </div>
   )
 }

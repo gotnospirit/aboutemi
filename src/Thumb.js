@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import slug from 'slug'
 
-export default ({ id, name, position, image}) => {
+export default ({ name, position, image }) => {
+  const id = slug(name, { lower: true })
+
   return (
     <Link to={'/works/' + id}>
       <figure>
