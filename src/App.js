@@ -12,24 +12,52 @@ import { projects } from './data'
 import slug from 'slug'
 import './App.css'
 
-const getCurrentProjectDetails = (id) => {
+const slugify = (project) => {
+  return project.details
+    ? slug(project.name, { lower: true })
+    : null
+}
+
+const getProjectIndex = (id) => {
   for (let i = 0, max = projects.length; i < max; ++i) {
-    const project = projects[i]
-    const project_id = slug(project.name, { lower: true })
+    const project_id = slugify(projects[i])
 
     if (project_id === id) {
-      return project.details
+      return i
     }
   }
   return null
 }
 
-const getPreviousProject = (id) => {
-  return null
+const getCurrentProjectDetails = (id) => {
+  const idx = getProjectIndex(id)
+
+  if (!idx) {
+    return null
+  }
+  return projects[idx].details
 }
 
-const getNextProject = (id) => {
-  return null
+const getPreviousProjectId = (id) => {
+  const idx = getProjectIndex(id)
+
+  if (!idx) {
+    return null
+  }
+  return idx > 0
+    ? slugify(projects[idx - 1])
+    : null
+}
+
+const getNextProjectId = (id) => {
+  const idx = getProjectIndex(id)
+
+  if (!idx) {
+    return null
+  }
+  return idx < projects.length - 1
+    ? slugify(projects[idx + 1])
+    : null
 }
 
 const renderNotFound = () => <Route component={NotFound} status={404} />
@@ -50,7 +78,7 @@ export default () => (
             if (!project) {
               return renderNotFound()
             }
-            return <Work details={project} previous_project={getPreviousProject(id)} next_project={getNextProject(id)} />
+            return <Work details={project} previous_project={getPreviousProjectId(id)} next_project={getNextProjectId(id)} />
           }} />
           {renderNotFound()}
         </Switch>

@@ -81,13 +81,13 @@ const renderNavLink = (id, project_id, label, enabled) => {
   return <li id={id}><Link to={'/works/' + project_id}>{label}</Link></li>
 }
 
-const renderNav = (previous, next, is_last) => {
+const renderNav = (previous_id, next_id, is_last) => {
   if (!is_last) {
     return null
   }
   return (<ul>
-      {renderNavLink('previous_work', '#', 'previous project', !!previous)}
-      {renderNavLink('next_work', '#', 'next project', !!next)}
+      {renderNavLink('previous_work', previous_id, 'previous project', !!previous_id)}
+      {renderNavLink('next_work', next_id, 'next project', !!next_id)}
       <li id="all_works"><Link to="/works">works</Link></li>
     </ul>)
 }
