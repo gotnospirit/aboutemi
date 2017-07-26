@@ -69,7 +69,35 @@ const projects = [
   }, {
       name : 'Furla',
       position : 'art direction, website',
-      image : '/images/thumbs/furla.jpg'
+      image : '/images/thumbs/furla.jpg',
+      details : [
+        '/images/works/project10.jpg',
+        {
+          background : '#F3F2F2',
+          presentation : {
+            client : 'Furla',
+            text : [
+              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+            ],
+            credits : 'CRÉDITS PHOTOS : Yollico Saito'
+          }
+        },
+        {
+          figures : [
+            '/images/works/project11.jpg',
+            '/images/works/project12.jpg',
+            '/images/works/project13.jpg',
+            '/images/works/project14.jpg'
+          ]
+        },
+        {
+          background : '#F9F5F5',
+          figures : [
+            '/images/works/project15.png'
+          ]
+        }
+      ]
   }, {
       name : 'Digiposte',
       position : 'art direction, UI',
@@ -77,15 +105,99 @@ const projects = [
   }, {
       name : 'E-Nymphea',
       position : 'identity, website',
-      image : '/images/thumbs/nymphea.jpg'
+      image : '/images/thumbs/nymphea.jpg',
+      details : [
+        '/images/works/project31.jpg',
+        {
+          background : '#F3F2F2',
+          presentation : {
+            title : 'Spa Collexion / Sequoiasoft',
+            client : 'E.Nymphea',
+            text : [
+              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+            ],
+            credits : 'CRÉDITS PHOTOS : Yollico Saito'
+          }
+        },
+        {
+          figures : [
+            '/images/works/project32.jpg',
+            '/images/works/project33.jpg',
+            '/images/works/project34.jpg'
+          ]
+        },
+        {
+          background : '#F5F5F5',
+          figures : [
+            '/images/works/project35.jpg'
+          ]
+        }
+      ]
   }, {
       name : 'Perrier',
       position : 'art direction, website',
-      image : '/images/thumbs/perrier.jpg'
+      image : '/images/thumbs/perrier.jpg',
+      details : [
+        '/images/works/project16.jpg',
+        {
+          background : '#F3F2F2',
+          presentation : {
+            client : 'Perrier',
+            text : [
+              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+            ],
+            credits : 'CRÉDITS PHOTOS : Yollico Saito'
+          }
+        },
+        {
+          figures : [
+            '/images/works/project17.png',
+            '/images/works/project18.jpg',
+            '/images/works/project19.jpg',
+            '/images/works/project20.jpg'
+          ]
+        },
+        {
+          background : '#DAECFD',
+          figures : [
+            '/images/works/project21.jpg',
+            '/images/works/project22.jpg',
+            '/images/works/project23.jpg',
+            '/images/works/project24.jpg',
+            '/images/works/project25.jpg'
+          ]
+        }
+      ]
   }, {
       name : 'Mercedes Occasions',
       position : 'identity, website',
-      image : '/images/thumbs/mercedes.jpg'
+      image : '/images/thumbs/mercedes.jpg',
+      details : [
+        '/images/works/project26.jpg',
+        {
+          background : '#F3F2F2',
+          presentation : {
+            title : 'Agence proximity bbdo',
+            client : 'Mercedes occasions',
+            text : [
+              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+            ],
+            credits : 'CRÉDITS PHOTOS : Yollico Saito'
+          }
+        },
+        {
+          background : '#DAECFD',
+          figures : [
+            '/images/works/project27.jpg',
+            '/images/works/project28.png',
+            '/images/works/project29.jpg',
+            '/images/works/project30.jpg'
+          ]
+        }
+      ]
   }, {
       name : 'TEDx Champs Elysées Women',
       position : 'branding, illustrations',
