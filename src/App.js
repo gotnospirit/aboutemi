@@ -69,9 +69,9 @@ export default () => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Header pathname={location.pathname}/>
         <Switch>
-          <Route exact path='/' component={Homepage} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/works' component={Works} />
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/works" component={Works} />
           <Route path="/works/:id" render={({ match }) => {
             let id = match.params.id
             let project_idx = getProjectIndex(id)

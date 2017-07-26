@@ -15,7 +15,10 @@ const renderSocials = (items) => {
 
 const onScrollToTop = (e) => {
   e.preventDefault()
-  window.animate(0)
+
+  if (window.animate) {
+    window.animate(0)
+  }
   return false
 }
 
