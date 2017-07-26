@@ -11,13 +11,15 @@ const renderTitle = (value) => {
   return (<h3>{value}</h3>)
 }
 
+const renderFigure = (item, index) => (
+  <figure key={index}><img src={item} alt=""/></figure>
+)
+
 const renderFigures = (items) => {
   if (!items) {
     return null
   }
-  return items.map((item, index) => (
-    <figure key={index}><img src={item} alt=""/></figure>
-  ))
+  return items.map(renderFigure)
 }
 
 const renderPresentationTitle = (value, order) => {
@@ -44,24 +46,25 @@ const renderPresentation = (value) => {
   if (!value) {
     return null
   }
-  console.log(value)
   return (<article>
-    {renderPresentationTitle(value.client, 1)}
-    {renderPresentationTitle(value.title, 2)}
+    {renderPresentationTitle(value.title, 1)}
+    {renderPresentationTitle(value.client, 2)}
     {renderPresentationText(value.text)}
     {renderPresentationTitle(value.credits, 3)}
     </article>)
 }
 
-const renderProject = (items, previous, next) => {
-  if (!items) {
-    return null
-  }
+const renderStringProject = (item, previous, next, index, max) => {
+  return (<section key={index}>
+      <div>
+        {renderFigure(item, 0)}
+        {renderNav(previous, next, index === max - 1)}
+      </div>
+    </section>)
+}
 
-  let max = items.length
-  
-  return items.map((item, index) => (
-    <section key={index} style={{ 
+const renderComplexProject = (item, previous, next, index, max) => {
+  return (<section key={index} style={{ 
       backgroundColor : item.background 
     }}>
       <div>
@@ -70,8 +73,19 @@ const renderProject = (items, previous, next) => {
         {renderPresentation(item.presentation)}
         {renderNav(previous, next, index === max - 1)}
       </div>
-    </section>
-  ))
+    </section>)
+}
+
+const renderProject = (items, previous, next) => {
+  if (!items) {
+    return null
+  }
+
+  let max = items.length
+
+  return items.map((item, index) => ('string' === typeof(item)) 
+    ? renderStringProject(item, previous, next, index, max) 
+    : renderComplexProject(item, previous, next, index, max))
 }
 
 const renderNavLink = (id, project_id, label, enabled) => {

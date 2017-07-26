@@ -10,16 +10,12 @@ const projects = [
       position : 'UX, art direction, website',
       image : '/images/thumbs/soon_martin.jpg',
       details : [
-        {
-          figures : [
-            '/images/works/project01.jpg'
-          ]
-        },
+        '/images/works/project01.jpg',
         {
           background : '#F3F2F2',
           presentation : {
-            client : 'Agence soon by kaliop',
-            title : 'Jb Martin',
+            title : 'Agence soon by kaliop',
+            client : 'Jb Martin',
             text : [
               'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
               'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
@@ -27,11 +23,7 @@ const projects = [
             credits : 'CRÉDITS PHOTOS : Jb Martin'
           }
         },
-        {
-          figures : [
-            '/images/works/project02.jpg'
-          ]
-        },
+        '/images/works/project02.jpg',
         {
           background : '#F3F2F2',
           title : 'Mobile',
@@ -44,7 +36,36 @@ const projects = [
   }, {
       name : 'Eudoxia',
       position : 'branding, art direction, website',
-      image : '/images/thumbs/eudoxia.jpg'
+      image : '/images/thumbs/eudoxia.jpg',
+      details : [
+        '/images/works/project05.jpg',
+        {
+          background : '#F3F2F2',
+          presentation : {
+            client : 'Eudoxia',
+            text : [
+              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+            ],
+            credits : 'CRÉDITS PHOTOS : Yollico Saito'
+          }
+        },
+        '/images/works/project06.jpg',
+        {
+          background : '#DBECFE',
+          figures : [
+            '/images/works/project07.jpg'
+          ]
+        },
+        {
+          background : '#DBECFE',
+          title : 'Product page',
+          figures : [
+            '/images/works/project08.jpg'
+          ]
+        },
+        '/images/works/project09.jpg'
+      ]
   }, {
       name : 'Furla',
       position : 'art direction, website',
