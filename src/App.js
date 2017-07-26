@@ -29,35 +29,36 @@ const getProjectIndex = (id) => {
   return null
 }
 
-const getCurrentProjectDetails = (id) => {
-  const idx = getProjectIndex(id)
-
-  if (!idx) {
+const getPreviousProjectId = (idx) => {
+  if (!idx || 0 === idx) {
     return null
   }
-  return projects[idx].details
+
+  for (let i = idx - 1; i >= 0; --i) {
+    let project_id = slugify(projects[i])
+
+    if (project_id) {
+      return project_id
+    }
+  }
+  return null
 }
 
-const getPreviousProjectId = (id) => {
-  const idx = getProjectIndex(id)
+const getNextProjectId = (idx) => {
+  let max = projects.length - 1
 
-  if (!idx) {
+  if (!idx || idx > max) {
     return null
   }
-  return idx > 0
-    ? slugify(projects[idx - 1])
-    : null
-}
 
-const getNextProjectId = (id) => {
-  const idx = getProjectIndex(id)
+  for (let i = idx + 1; i < max; ++i) {
+    let project_id = slugify(projects[i])
 
-  if (!idx) {
-    return null
+    if (project_id) {
+      return project_id
+    }
   }
-  return idx < projects.length - 1
-    ? slugify(projects[idx + 1])
-    : null
+  return null
 }
 
 const renderNotFound = () => <Route component={NotFound} status={404} />
@@ -73,12 +74,15 @@ export default () => (
           <Route exact path='/works' component={Works} />
           <Route path="/works/:id" render={({ match }) => {
             let id = match.params.id
-            let project = getCurrentProjectDetails(id)
+            let project_idx = getProjectIndex(id)
 
-            if (!project) {
+            if (!project_idx) {
               return renderNotFound()
             }
-            return <Work details={project} previous_project={getPreviousProjectId(id)} next_project={getNextProjectId(id)} />
+            return <Work
+              details={projects[project_idx].details}
+              previous_project={getPreviousProjectId(project_idx)}
+              next_project={getNextProjectId(project_idx)} />
           }} />
           {renderNotFound()}
         </Switch>
