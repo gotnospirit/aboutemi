@@ -1,0 +1,39 @@
+#artwork {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+#artwork:after {
+  background-color: black;
+  width: .1rem;
+  height: 6rem;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+#artwork > div {
+  position: absolute;
+  bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #artwork > div {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #artwork {
+    position: relative;
+  }
+
+  #artwork > div {
+    width: 36%;
+    position: absolute;
+    bottom: 3rem;
+    left: 32%;
+  }
+}
