@@ -4,13 +4,13 @@ const projects = [
   {
       name : 'Restaurant Crissier',
       position : 'art direction, website',
-      image : basename + 'images/thumbs/crissier.jpg'
+      image : 'images/thumbs/crissier.jpg'
   }, {
       name : 'Agence Soon x JB Martin',
       position : 'UX, art direction, website',
-      image : basename + 'images/thumbs/soon_martin.jpg',
+      image : 'images/thumbs/soon_martin.jpg',
       details : [
-        basename + 'images/works/project01.jpg',
+        'images/works/project01.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -23,22 +23,22 @@ const projects = [
             credits : 'CRÉDITS PHOTOS : Jb Martin'
           }
         },
-        basename + 'images/works/project02.jpg',
+        'images/works/project02.jpg',
         {
           background : '#F3F2F2',
           title : 'Mobile',
           figures : [
-            basename + 'images/works/project03.jpg',
-            basename + 'images/works/project04.jpg'
+            'images/works/project03.jpg',
+            'images/works/project04.jpg'
           ]
         }
       ]
   }, {
       name : 'Eudoxia',
       position : 'branding, art direction, website',
-      image : basename + 'images/thumbs/eudoxia.jpg',
+      image : 'images/thumbs/eudoxia.jpg',
       details : [
-        basename + 'images/works/project05.jpg',
+        'images/works/project05.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -50,28 +50,28 @@ const projects = [
             credits : 'CRÉDITS PHOTOS : Yollico Saito'
           }
         },
-        basename + 'images/works/project06.jpg',
+        'images/works/project06.jpg',
         {
           background : '#DBECFE',
           figures : [
-            basename + 'images/works/project07.jpg'
+            'images/works/project07.jpg'
           ]
         },
         {
           background : '#DBECFE',
           title : 'Product page',
           figures : [
-            basename + 'images/works/project08.jpg'
+            'images/works/project08.jpg'
           ]
         },
-        basename + 'images/works/project09.jpg'
+        'images/works/project09.jpg'
       ]
   }, {
       name : 'Furla',
       position : 'art direction, website',
-      image : basename + 'images/thumbs/furla.jpg',
+      image : 'images/thumbs/furla.jpg',
       details : [
-        basename + 'images/works/project10.jpg',
+        'images/works/project10.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -85,29 +85,29 @@ const projects = [
         },
         {
           figures : [
-            basename + 'images/works/project11.jpg',
-            basename + 'images/works/project12.jpg',
-            basename + 'images/works/project13.jpg',
-            basename + 'images/works/project14.jpg'
+            'images/works/project11.jpg',
+            'images/works/project12.jpg',
+            'images/works/project13.jpg',
+            'images/works/project14.jpg'
           ]
         },
         {
           background : '#F9F5F5',
           figures : [
-            basename + 'images/works/project15.png'
+            'images/works/project15.png'
           ]
         }
       ]
   }, {
       name : 'Digiposte',
       position : 'art direction, UI',
-      image : basename + 'images/thumbs/digiposte.jpg'
+      image : 'images/thumbs/digiposte.jpg'
   }, {
       name : 'E-Nymphea',
       position : 'identity, website',
-      image : basename + 'images/thumbs/nymphea.jpg',
+      image : 'images/thumbs/nymphea.jpg',
       details : [
-        basename + 'images/works/project31.jpg',
+        'images/works/project31.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -122,24 +122,24 @@ const projects = [
         },
         {
           figures : [
-            basename + 'images/works/project32.jpg',
-            basename + 'images/works/project33.jpg',
-            basename + 'images/works/project34.jpg'
+            'images/works/project32.jpg',
+            'images/works/project33.jpg',
+            'images/works/project34.jpg'
           ]
         },
         {
           background : '#F5F5F5',
           figures : [
-            basename + 'images/works/project35.jpg'
+            'images/works/project35.jpg'
           ]
         }
       ]
   }, {
       name : 'Perrier',
       position : 'art direction, website',
-      image : basename + 'images/thumbs/perrier.jpg',
+      image : 'images/thumbs/perrier.jpg',
       details : [
-        basename + 'images/works/project16.jpg',
+        'images/works/project16.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -153,29 +153,29 @@ const projects = [
         },
         {
           figures : [
-            basename + 'images/works/project17.png',
-            basename + 'images/works/project18.jpg',
-            basename + 'images/works/project19.jpg',
-            basename + 'images/works/project20.jpg'
+            'images/works/project17.png',
+            'images/works/project18.jpg',
+            'images/works/project19.jpg',
+            'images/works/project20.jpg'
           ]
         },
         {
           background : '#DAECFD',
           figures : [
-            basename + 'images/works/project21.jpg',
-            basename + 'images/works/project22.jpg',
-            basename + 'images/works/project23.jpg',
-            basename + 'images/works/project24.jpg',
-            basename + 'images/works/project25.jpg'
+            'images/works/project21.jpg',
+            'images/works/project22.jpg',
+            'images/works/project23.jpg',
+            'images/works/project24.jpg',
+            'images/works/project25.jpg'
           ]
         }
       ]
   }, {
       name : 'Mercedes Occasions',
       position : 'identity, website',
-      image : basename + 'images/thumbs/mercedes.jpg',
+      image : 'images/thumbs/mercedes.jpg',
       details : [
-        basename + 'images/works/project26.jpg',
+        'images/works/project26.jpg',
         {
           background : '#F3F2F2',
           presentation : {
@@ -191,33 +191,33 @@ const projects = [
         {
           background : '#DAECFD',
           figures : [
-            basename + 'images/works/project27.jpg',
-            basename + 'images/works/project28.png',
-            basename + 'images/works/project29.jpg',
-            basename + 'images/works/project30.jpg'
+            'images/works/project27.jpg',
+            'images/works/project28.png',
+            'images/works/project29.jpg',
+            'images/works/project30.jpg'
           ]
         }
       ]
   }, {
       name : 'TEDx Champs Elysées Women',
       position : 'branding, illustrations',
-      image : basename + 'images/thumbs/tedx.jpg'
+      image : 'images/thumbs/tedx.jpg'
   }, {
       name : 'Princesse Tam Tam',
       position : 'art direction, e-magazine',
-      image : basename + 'images/thumbs/tam_tam.jpg'
+      image : 'images/thumbs/tam_tam.jpg'
   }, {
       name : 'Warner',
       position : 'branding, event',
-      image : basename + 'images/thumbs/warner.jpg'
+      image : 'images/thumbs/warner.jpg'
   }, {
       name : 'SkII',
       position : 'art direction, UI, mobile',
-      image : basename + 'images/thumbs/skii.jpg'
+      image : 'images/thumbs/skii.jpg'
   }, {
       name : 'Générale optique',
       position : 'webdesign, newsletters campaignes',
-      image : basename + 'images/thumbs/generale_optique.jpg'
+      image : 'images/thumbs/generale_optique.jpg'
   }
 ]
 

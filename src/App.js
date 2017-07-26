@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Helmet from 'react-helmet'
 import Header from './Header'
 import Footer from './Footer'
 import Homepage from './Homepage'
@@ -67,6 +68,7 @@ export default () => (
   <Router basename={basename}>
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
+        <Helmet base={{ "href" : basename }}/>
         <Header pathname={location.pathname}/>
         <Switch>
           <Route exact path="/" component={Homepage} />
