@@ -3,7 +3,9 @@ import Helmet from 'react-helmet'
 import './Artwork.css'
 
 const svg4everybody = () => {
-  window.svg4everybody()
+  if (window.svg4everybody) {
+    window.svg4everybody()
+  }
 }
 
 export default class extends Component {
