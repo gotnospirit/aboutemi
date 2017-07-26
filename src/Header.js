@@ -18,7 +18,7 @@ export default ({ pathname }) => {
       : null}
     <nav>
       {(is_homepage) 
-        ? <InternalLink href="#thumbs" label="works" />
+        ? <InternalLink href="/#thumbs" label="works" />
         : renderLink('/works', 'works', pathname)}
       {renderLink('/about', 'about', pathname)}
       <ExternalLink href="http://www.inestimable.me/" label="my blog" />
