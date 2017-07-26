@@ -281,11 +281,20 @@ const services = {
   }
 }
 
+const getPageTitle = (title) => {
+  let data = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
+  if (title) {
+    data.push(title)
+  }
+  return data.join(' - ')
+}
+
 export {
   basename,
   projects,
   about_me,
   footer,
   home,
-  services
+  services,
+  getPageTitle
 }

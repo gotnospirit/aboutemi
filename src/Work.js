@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
+import { getPageTitle } from './data'
 import MultilineText from './MultilineText'
 import './Work.css'
 
@@ -106,11 +107,11 @@ const renderNav = (previous_id, next_id, is_last) => {
     </ul>)
 }
 
-export default ({ details, previous_project, next_project }) => {
+export default ({ project, previous_project, next_project }) => {
   return (
     <div id="work">
-      <Helmet title="Aboutemi - Art Direction - Interface Design - Emilie Tan"/>
-      {renderProject(details, previous_project, next_project)}
+      <Helmet title={getPageTitle(project.name)}/>
+      {renderProject(project.details, previous_project, next_project)}
     </div>
   )
 }

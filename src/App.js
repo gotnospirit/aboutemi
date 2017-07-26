@@ -9,7 +9,7 @@ import Works from './Works'
 import Work from './Work'
 import Camera from './Camera'
 import NotFound from './NotFound'
-import { basename, projects } from './data'
+import { basename, projects, getPageTitle } from './data'
 import slug from 'slug'
 import './App.css'
 
@@ -68,7 +68,7 @@ export default () => (
   <Router basename={basename}>
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
-        <Helmet base={{ "href" : basename }}/>
+        <Helmet base={{ "href" : basename }} title={getPageTitle()}/>
         <Header pathname={location.pathname}/>
         <Switch>
           <Route exact path="/" component={Homepage} />
@@ -82,7 +82,7 @@ export default () => (
               return renderNotFound()
             }
             return <Work
-              details={projects[project_idx].details}
+              project={projects[project_idx]}
               previous_project={getPreviousProjectId(project_idx)}
               next_project={getNextProjectId(project_idx)} />
           }} />
