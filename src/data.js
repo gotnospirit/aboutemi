@@ -1,3 +1,4 @@
+const basename = null
 
 const projects = [
   {
@@ -148,6 +149,7 @@ const services = {
 }
 
 export {
+  basename,
   projects,
   about_me,
   footer,

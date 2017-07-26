@@ -8,7 +8,7 @@ import Works from './Works'
 import Work from './Work'
 import Camera from './Camera'
 import NotFound from './NotFound'
-import { projects } from './data'
+import { basename, projects } from './data'
 import slug from 'slug'
 import './App.css'
 
@@ -63,7 +63,7 @@ const getNextProjectId = (id) => {
 const renderNotFound = () => <Route component={NotFound} status={404} />
 
 export default () => (
-  <Router>
+  <Router basename={basename}>
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Header pathname={location.pathname}/>
