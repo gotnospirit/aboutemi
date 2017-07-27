@@ -8,6 +8,7 @@
     "react-helmet": "4",
     "react-router-dom": "^4.1.1",
     "react-snapshot": "^1.1.0",
+    "scriptjs": "^2.5.8",
     "slug": "^0.9.1"
   },
   "devDependencies": {

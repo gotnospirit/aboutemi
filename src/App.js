@@ -8,6 +8,7 @@ import About from './About'
 import Works from './Works'
 import Work from './Work'
 import Camera from './Camera'
+import Polyfill from './Polyfill'
 import NotFound from './NotFound'
 import { basename, projects, getPageTitle } from './data'
 import slug from 'slug'
@@ -69,6 +70,7 @@ export default () => (
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Helmet base={{ "href" : basename }} title={getPageTitle()}/>
+        <Polyfill/>
         <Header pathname={location.pathname}/>
         <Switch>
           <Route exact path="/" component={Homepage} />
