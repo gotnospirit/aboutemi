@@ -1,15 +1,12 @@
 #services {
-  height: calc(100vh - 13rem);
   background-color: #FAF9F5;
 }
 
 #services > div {
-  width: 70%;
-  margin: 0 auto;
   text-align: left;
-  padding-top: 5em;
   line-height: 1.87rem; /* 30px; */
   font-weight: 300;
+  margin: 0 auto;
 }
 
 #services h3 {
@@ -17,19 +14,18 @@
 }
 
 #services ul {
-  display: inline-block;
-  width: 50%;
+  list-style: none;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
 }
 
 #services ul li {
-  display: inline-block;
   width: 15em;
 }
 
 #services address {
   font-style: normal;
-  display: inline-block;
-  width: 50%;
 }
 
 #services address,
@@ -47,4 +43,51 @@
 
 #services address span {
   display: block;
+}
+
+#carousel {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #services > div {
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  #services address {
+    margin-top: 3rem;
+  }
+
+  #carousel {
+    padding: 4rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #services {
+    height: calc(100vh - 13rem);
+    position: relative;
+  }
+
+  #services > div {
+    width: 70%;
+    padding-top: 5rem;
+  }
+
+  #services ul {
+    width: 50%;
+    display: inline-block;
+  }
+
+  #services address {
+    width: 50%;
+    display: inline-block;
+  }
+
+  #carousel {
+    position: absolute;
+    top: calc(50% - (2.5rem / 2));
+    width: 100%;
+  }
 }

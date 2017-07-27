@@ -2,7 +2,6 @@ import React from 'react'
 import EmailLink from './EmailLink'
 import PhoneLink from './PhoneLink'
 import ExternalLink from './ExternalLink'
-import TextCarousel from './TextCarousel'
 import { services } from './data'
 import './Services.css'
 
@@ -25,6 +24,6 @@ export default () => {
         <span><PhoneLink {...phone}/></span>
       </address>
     </div>
-    <TextCarousel />
+    <p id="carousel">Some stuff I love : organic cosmetics.</p>
   </section>)
 }
