@@ -12,9 +12,14 @@ const renderTitle = (value) => {
   return (<h3>{value}</h3>)
 }
 
-const renderFigure = (item, index) => (
-  <figure key={index}><img src={item} alt=""/></figure>
-)
+const renderFigure = (item, index) => {
+  const is_video = 0 === item.indexOf('http://') || 0 === item.indexOf('https://')
+
+  if (is_video) {
+    return <div key={'video-' + index} className="video-container"><iframe title={'video-' + index} src={item} width="100%" height="auto" frameBorder="0" allowFullScreen={true} /></div>
+  }
+  return <figure key={'img-' + index}><img src={item} alt=""/></figure>
+}
 
 const renderFigures = (items) => {
   if (!items) {

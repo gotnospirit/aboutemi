@@ -2,6 +2,23 @@
   background-color: white;
 }
 
+/* https://www.yannkozon.com/blog/2132-rendre-le-embed-youtube-responsive/ */
+#work .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+#work .video-container iframe,
+#work .video-container object,
+#work .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #work section {
   width: 100%;
 }
