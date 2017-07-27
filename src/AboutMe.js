@@ -3,11 +3,11 @@ import MultilineText from './MultilineText'
 import { about_me } from './data'
 import './AboutMe.css'
 
-export default () => {
-  return (<section id="aboutme">
+export default () => (
+  <section id="aboutme">
     <p>
       <strong>About me.</strong>
       <MultilineText {...about_me}/>
     </p>
-  </section>)
-}
+  </section>
+)
