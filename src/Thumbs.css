@@ -1,10 +1,10 @@
 #thumbs {
   background: #FCF4E7;
-  padding: 2.2em 0;
+  padding: 2.2rem 0;
 }
 
 #thumbs > div {
-  max-width: 906px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
 #thumbs a {
   width: 302px;
   display: inline-block;
-  margin: 3rem 0;
+  margin: 0 1rem 3rem 1rem;
 }
 
 #thumbs a:hover span {
@@ -40,10 +40,10 @@
 
 @media only screen and (min-width: 1024px) {
   #thumbs a:first-child {
-    margin-top: 6rem;
+    margin-top: 4.3%;
   }
 
   #thumbs a:nth-child(3) {
-    margin-top: 5rem;
+    margin-top: 8.6%;
   }
 }
