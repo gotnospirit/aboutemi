@@ -8,9 +8,18 @@ const onClickHandler = (e) => {
       el = document.getElementById(target_id),
       elemRect = el ? el.getBoundingClientRect() : null
 
-  if (elemRect && window.animate)
-  {
-    window.animate(elemRect.top - bodyRect.top)
+  if (elemRect) {
+    let y = elemRect.top - bodyRect.top,
+        header = document.querySelector('header'),
+        headerRect = header ? header.getBoundingClientRect() : null
+
+    if (headerRect) {
+      y -= (headerRect.bottom - headerRect.top)
+    }
+
+    if (window.animate) {
+      window.animate(y)
+    }
   }
 };
 

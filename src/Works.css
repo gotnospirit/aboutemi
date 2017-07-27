@@ -1,0 +1,15 @@
+#works {
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  #works {
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #works {
+    padding-top: 5rem;
+  }
+}
