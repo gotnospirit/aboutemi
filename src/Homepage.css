@@ -1,3 +1,42 @@
 #homepage {
   background-color: #FCF4E7;
 }
+
+#home_degrade {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+#home_degrade:after {
+  background-color: black;
+  width: .1rem;
+  height: 6rem;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+#home_degrade > div {
+  position: absolute;
+  bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #home_degrade > div {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #home_degrade {
+    position: relative;
+  }
+
+  #home_degrade > div {
+    width: 36%;
+    bottom: 3rem;
+    left: 32%;
+  }
+}

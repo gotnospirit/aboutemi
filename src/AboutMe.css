@@ -1,24 +1,11 @@
 #aboutme {
-  height: 100vh;
-  background-color: #fff;
-}
-
-#aboutme {
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-  background: url(images/tshirt.png) no-repeat 100% 50%;
-}
-
-#aboutme p {
   text-align: left;
-  position: absolute;
-  top: 40%;
   line-height: 1.87rem; /* 30px; */
   font-weight: 300;
+  position: absolute;
 }
 
-#aboutme p strong {
+#aboutme strong {
   font-size: 2.31rem; /* 37px; */
   background-color: #272727;
   color: #fff;
@@ -28,10 +15,25 @@
   margin-bottom: .5em;
 }
 
-#aboutme p a {
+#aboutme a {
   color: #d8664e;
 }
 
-#aboutme p span > span {
+#aboutme span > span {
   display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  #aboutme {
+    top: 10rem;
+    left: 5%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #aboutme {
+    top: 40%;
+    left: 15%;
+  }
 }

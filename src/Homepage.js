@@ -6,7 +6,7 @@ import './Homepage.css'
 
 export default () => (
   <div id="homepage">
-    <Artwork filepath="degrade.svg" width={437} height={435} />
+    <Artwork id="home_degrade" filepath="home_degrade.svg#Calque_2" width={437} height={435} />
     <Presentation/>
     <Thumbs/>
   </div>

@@ -5,9 +5,7 @@ import './AboutMe.css'
 
 export default () => (
   <section id="aboutme">
-    <p>
-      <strong>About me.</strong>
-      <MultilineText {...about_me}/>
-    </p>
+    <strong>About me.</strong>
+    <MultilineText {...about_me}/>
   </section>
 )
