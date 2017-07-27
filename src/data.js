@@ -278,7 +278,10 @@ const services = {
   phone : {
     number : '+33689750218',
     label : '+33 6 89 75 02 18'
-  }
+  },
+  stuffs : [
+    'organic cosmetics'
+  ]
 }
 
 const getPageTitle = (title) => {

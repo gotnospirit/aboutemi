@@ -11,8 +11,12 @@ const renderServices = (items) => {
   ))}</ul>)
 }
 
+const renderStuffs = (items) => {
+  return <span>{items[0]}</span>
+}
+
 export default () => {
-  const { items, resume, address, phone } = services
+  const { items, resume, address, phone, stuffs } = services
 
   return (<section id="services">
     <div>
@@ -24,6 +28,6 @@ export default () => {
         <span><PhoneLink {...phone}/></span>
       </address>
     </div>
-    <p id="carousel">Some stuff I love : organic cosmetics.</p>
+    <p id="carousel">Some stuff I love : {renderStuffs(stuffs)}.</p>
   </section>)
 }
