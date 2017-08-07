@@ -280,7 +280,12 @@ const services = {
     label : '+33 6 89 75 02 18'
   },
   stuffs : [
-    'organic cosmetics'
+    'food',
+    'travel',
+    'latte',
+    'super-herts',
+    'organic cosmetics',
+    'photography'
   ]
 }
 
