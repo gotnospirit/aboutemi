@@ -26,10 +26,19 @@
 #work section > div {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 2.6rem 0;
 }
 
 #work section figure {
-  margin: 0 auto;
+  margin: 2.6rem auto;
+}
+
+#work section figure:first-child {
+  margin-top: 0;
+}
+
+#work section figure:last-child {
+  margin-bottom: 0;
 }
 
 #work section figure img {
@@ -47,6 +56,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 1.56rem;
+  margin-bottom: 2.6rem;
 }
 
 #work article h4 {
@@ -117,16 +127,11 @@
   }
   
   #work section > div {
-    padding: 2rem 0;
     width: 90%;
   }
 
   #work section figure {
     width: 100%;
-  }
-  
-  #work section div > h3 {
-    margin-bottom: 2rem;
   }
 
   #work ul {
@@ -162,16 +167,11 @@
   }
 
   #work section > div {
-    padding: 4rem 0;
     width: 70%;
   }
-  
+
   #work section figure {
     width: 80%;
-  }
-  
-  #work section div > h3 {
-    margin-bottom: 4rem;
   }
 
   #work article {
@@ -179,7 +179,7 @@
   }
 
   #work ul {
-    margin-top: 4rem;
+    margin-top: 3.46rem;
   }
 
   #work ul li {

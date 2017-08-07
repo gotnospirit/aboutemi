@@ -2,6 +2,7 @@ import React from 'react'
 import EmailLink from './EmailLink'
 import PhoneLink from './PhoneLink'
 import ExternalLink from './ExternalLink'
+import Carousel from './Carousel'
 import { services } from './data'
 import './Services.css'
 
@@ -11,12 +12,8 @@ const renderServices = (items) => {
   ))}</ul>)
 }
 
-const renderStuffs = (items) => {
-  return <span>{items[0]}</span>
-}
-
 export default () => {
-  const { items, resume, address, phone, stuffs } = services
+  const { items, resume, address, phone } = services
 
   return (<section id="services">
     <div>
@@ -28,6 +25,6 @@ export default () => {
         <span><PhoneLink {...phone}/></span>
       </address>
     </div>
-    <p id="carousel">Some stuff I love : {renderStuffs(stuffs)}.</p>
+    <Carousel/>
   </section>)
 }

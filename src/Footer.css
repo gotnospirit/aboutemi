@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+#footer ul a:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1024px) {
   #footer {
     text-align: left;
