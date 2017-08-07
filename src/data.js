@@ -1,4 +1,4 @@
-const basename = '/'
+const basename = '/v2/'
 
 const projects = [
   {
