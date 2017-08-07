@@ -1,225 +1,351 @@
 const basename = '/'
-
-const projects = [
-  {
-      name : 'Restaurant Crissier',
-      position : 'art direction, website',
-      image : 'images/thumbs/crissier.jpg'
-  }, {
-      name : 'Agence Soon x JB Martin',
-      position : 'UX, art direction, website',
-      image : 'images/thumbs/soon_martin.jpg',
-      details : [
-        'images/works/project01.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            title : 'Agence soon by kaliop',
-            client : 'Jb Martin',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Jb Martin'
-          }
-        },
-        'images/works/project02.jpg',
-        {
-          background : '#F3F2F2',
-          title : 'Mobile',
-          figures : [
-            'images/works/project03.jpg',
-            'images/works/project04.jpg'
-          ]
-        }
+const projects = [{
+  name: 'Restaurant de l\'hôtel de Ville Crissier',
+  position: 'art direction, website',
+  image: 'images/thumbs/crissier.jpg',
+  details: [
+    'images/works/00_crissier.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Les ateliers Moonshine',
+        client: 'Restaurant de l\'hôtel de Ville Crissier',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: Restaurant de l\'hôtel de Ville Crissier'
+      }
+    },
+    'images/works/01_jbm.jpg',
+    {
+      background: '#f8f7f7',
+      title: 'Mobile',
+      figures: [
+        'images/works/02_jbm.png',
       ]
-  }, {
-      name : 'Eudoxia',
-      position : 'branding, art direction, website',
-      image : 'images/thumbs/eudoxia.jpg',
-      details : [
-        'images/works/project05.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            client : 'Eudoxia',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Yollico Saito'
-          }
-        },
-        'images/works/project06.jpg',
-        {
-          background : '#DBECFE',
-          figures : [
-            'images/works/project07.jpg'
-          ]
-        },
-        {
-          background : '#DBECFE',
-          title : 'Product page',
-          figures : [
-            'images/works/project08.jpg'
-          ]
-        },
-        'images/works/project09.jpg'
+    }
+  ]
+}, {
+  name: 'Agence Soon x JB Martin',
+  position: 'UX, art direction, website',
+  image: 'images/thumbs/soon_martin.jpg',
+  details: [
+    'images/works/00_jbm.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Agence soon by kaliop',
+        client: 'JB Martin',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: JB Martin'
+      }
+    },
+    'images/works/01_jbm.jpg',
+    {
+      background: '#f8f7f7',
+      title: 'Mobile',
+      figures: [
+        'images/works/02_jbm.png',
       ]
-  }, {
-      name : 'Furla',
-      position : 'art direction, website',
-      image : 'images/thumbs/furla.jpg',
-      details : [
-        'images/works/project10.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            client : 'Furla',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Yollico Saito'
-          }
-        },
-        {
-          figures : [
-            'images/works/project11.jpg',
-            'images/works/project12.jpg',
-            'images/works/project13.jpg',
-            'images/works/project14.jpg'
-          ]
-        },
-        {
-          background : '#F9F5F5',
-          figures : [
-            'images/works/project15.png'
-          ]
-        }
+    }
+  ]
+}, {
+  name: 'Eudoxia',
+  position: 'branding, art direction, website',
+  image: 'images/thumbs/eudoxia.jpg',
+  details: [
+    'images/works/00_eudoxia.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'Eudoxia',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: Yollico Saito'
+      }
+    },
+    'images/works/01_eudoxia.jpg',
+    {
+      background: '#DBECFE',
+      figures: [
+        'images/works/02_eudoxia.jpg',
+        'images/works/03_eudoxia.jpg',
       ]
-  }, {
-      name : 'Digiposte',
-      position : 'art direction, UI',
-      image : 'images/thumbs/digiposte.jpg'
-  }, {
-      name : 'E-Nymphea',
-      position : 'identity, website',
-      image : 'images/thumbs/nymphea.jpg',
-      details : [
-        'images/works/project31.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            title : 'Spa Collexion / Sequoiasoft',
-            client : 'E.Nymphea',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Yollico Saito'
-          }
-        },
-        {
-          figures : [
-            'images/works/project32.jpg',
-            'images/works/project33.jpg',
-            'images/works/project34.jpg'
-          ]
-        },
-        {
-          background : '#F5F5F5',
-          figures : [
-            'images/works/project35.jpg'
-          ]
-        }
+    },
+    'images/works/04_eudoxia.jpg'
+  ]
+}, {
+  name: 'Furla',
+  position: 'art direction, website',
+  image: 'images/thumbs/furla.jpg',
+  details: [
+    'images/works/00_furla.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'Furla',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ]
+      }
+    },
+    {
+      figures: [
+        'images/works/01_furla.jpg',
+        'images/works/02_furla.jpg',
+        'images/works/03_furla.jpg',
+        'images/works/04_furla.jpg',
+        'images/works/05_furla.jpg',
       ]
-  }, {
-      name : 'Perrier',
-      position : 'art direction, website',
-      image : 'images/thumbs/perrier.jpg',
-      details : [
-        'images/works/project16.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            client : 'Perrier',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Yollico Saito'
-          }
-        },
-        {
-          figures : [
-            'images/works/project17.png',
-            'images/works/project18.jpg',
-            'images/works/project19.jpg',
-            'images/works/project20.jpg'
-          ]
-        },
-        {
-          background : '#DAECFD',
-          figures : [
-            'images/works/project21.jpg',
-            'images/works/project22.jpg',
-            'images/works/project23.jpg',
-            'images/works/project24.jpg',
-            'images/works/project25.jpg'
-          ]
-        }
+    }
+  ]
+}, {
+  name: 'Digiposte',
+  position: 'art direction, UI',
+  image: 'images/thumbs/digiposte.jpg',
+  details: [
+    'images/works/00_digiposte.gif',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Agence Ekino Fullsix',
+        client: 'Digiposte',
+        text: [
+          'Plus qu\'un simple espace de stockage, Digiposte est le coffre numérique proposé par La Poste qui vous accompagne dans l\'organisation et le stockage de tous vos documents importants grâce à une utilisation intuitive. Il vous permet de sauvegarder gratuitement et à vie 5 Go de données personnelles.'
+        ]
+      }
+    },
+    {
+      figures: [
+        'images/works/01_digiposte.gif',
+        'images/works/02_digiposte.gif',
+        'images/works/03_digiposte.gif'
       ]
-  }, {
-      name : 'Mercedes Occasions',
-      position : 'identity, website',
-      image : 'images/thumbs/mercedes.jpg',
-      details : [
-        'images/works/project26.jpg',
-        {
-          background : '#F3F2F2',
-          presentation : {
-            title : 'Agence proximity bbdo',
-            client : 'Mercedes occasions',
-            text : [
-              'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-              'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
-            ],
-            credits : 'CRÉDITS PHOTOS : Yollico Saito'
-          }
-        },
-        {
-          background : '#DAECFD',
-          figures : [
-            'images/works/project27.jpg',
-            'images/works/project28.png',
-            'images/works/project29.jpg',
-            'images/works/project30.jpg'
-          ]
-        }
+    }
+  ]
+}, {
+  name: 'E-Nymphea',
+  position: 'identity, website',
+  image: 'images/thumbs/nymphea.jpg',
+  details: [
+    'images/works/00_enymphea.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Spa Collexion / Sequoiasoft',
+        client: 'E-Nymphea',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ]
+      }
+    },
+    {
+      figures: [
+        'images/works/01_enymphea.jpg',
+        'images/works/02_enymphea.jpg',
+        'images/works/03_enymphea.jpg',
       ]
-  }, {
-      name : 'TEDx Champs Elysées Women',
-      position : 'branding, illustrations',
-      image : 'images/thumbs/tedx.jpg'
-  }, {
-      name : 'Princesse Tam Tam',
-      position : 'art direction, e-magazine',
-      image : 'images/thumbs/tam_tam.jpg'
-  }, {
-      name : 'Warner',
-      position : 'branding, event',
-      image : 'images/thumbs/warner.jpg'
-  }, {
-      name : 'SkII',
-      position : 'art direction, UI, mobile',
-      image : 'images/thumbs/skii.jpg'
-  }, {
-      name : 'Générale optique',
-      position : 'webdesign, newsletters campaignes',
-      image : 'images/thumbs/generale_optique.jpg'
-  }
-]
+    },
+    {
+      background: '#F5F5F5',
+      figures: [
+        'images/works/04_enymphea.jpg',
+      ]
+    }
+  ]
+}, {
+  name: 'Perrier',
+  position: 'art direction, website',
+  image: 'images/thumbs/perrier.jpg',
+  details: [
+    'images/works/00_perrier.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'Perrier',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: Perrier'
+      }
+    },
+    {
+      figures: [
+        'images/works/01_perrier.jpg',
+        'images/works/02_perrier.jpg',
+        'images/works/03_perrier.jpg',
+        'images/works/04_perrier.gif',
+      ]
+    },
+    {
+      background: '#e3f0fc',
+      figures: [
+        'images/works/05_perrier.jpg',
+        'images/works/06_perrier.jpg',
+        'images/works/07_perrier.jpg',
+        'images/works/08_perrier.jpg',
+        'images/works/09_perrier.jpg',
+      ]
+    }
+  ]
+}, {
+  name: 'Mercedes Occasions',
+  position: 'identity, website',
+  image: 'images/thumbs/mercedes.jpg',
+  details: [
+    'images/works/00_mercedesoccasions.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Agence proximity bbdo',
+        client: 'Mercedes occasions',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ]
+      }
+    },
+    {
+      background: '#e3f0fc',
+      figures: [
+        'images/works/01_mercedesoccasions.jpg',
+        'images/works/02_mercedesoccasions.jpg',
+        'images/works/03_mercedesoccasions.jpg',
+        'images/works/04_mercedesoccasions.jpg',
+      ]
+    }
+  ]
+}, {
+  name: 'TEDx Champs Elysées Women',
+  position: 'branding, illustrations',
+  image: 'images/thumbs/tedx.jpg',
+  details: [
+    'images/works/00_tedxcewomen.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'TEDx Champs Elysées Women',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: Olivier Ezratty & Emanuel Vivier'
+      }
+    },
+    {
+      figures: [
+        'images/works/01_tedxcewomen.jpg',
+        'images/works/02_tedxcewomen.jpg'
+      ]
+    },
+    {
+      title: 'speakers illustrations',
+      figures: [
+        'images/works/03_tedxcewomen.gif',
+        'images/works/04_tedxcewomen.jpg',
+        'images/works/05_tedxcewomen.jpg',
+      ]
+    },
+  ]
+}, {
+  name: 'Princesse Tam Tam',
+  position: 'art direction, e-magazine',
+  image: 'images/thumbs/tam_tam.jpg',
+  details: [
+    'images/works/00_tamtam.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'Princess Tam Tam',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ]
+      }
+    },
+    {
+      figures: [
+        'images/works/01_tamtam.png',
+        'images/works/02_tamtam.jpg',
+        'images/works/03_tamtam.png',
+        'images/works/04_tamtam.png'
+      ]
+    }
+  ]
+}, {
+  name: 'Warner',
+  position: 'branding, event',
+  image: 'images/thumbs/warner.jpg',
+  details: [
+    'images/works/00_warner.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Agence monsieur white',
+        client: 'Warner',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ],
+        credits: 'Photo by: Monsieur White / Warner'
+      }
+    },
+    {
+      figures: [
+        'images/works/01_warner.jpg',
+        'images/works/02_warner.jpg',
+        'images/works/03_warner.jpg',
+        'images/works/04_warner.jpg',
+        'images/works/05_warner.jpg',
+        'images/works/06_warner.jpg',
+      ]
+    }
+  ]
+}, {
+  name: 'SkII',
+  position: 'art direction, UI, mobile',
+  image: 'images/thumbs/skii.jpg',
+  details: [
+    'images/works/00_skII.jpg',
+    {
+      background: '#fcfbfb',
+      presentation: {
+        client: 'SKII',
+        text: [
+          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
+          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+        ]
+      }
+    },
+    {
+      figures: [
+        'images/works/01_skII.png',
+        'images/works/02_skII.png'
+      ]
+    },
+    {
+      background: '#fae7e8',
+      figures: [
+        'images/works/03_skII.jpg',
+      ]
+    },
+    {
+      figures: [
+        'images/works/04_skII.png',
+        'images/works/05_skII.png'
+      ]
+    }
+  ]
+}]
 
 const about_me = {
   description : [
