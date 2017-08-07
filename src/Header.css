@@ -1,8 +1,11 @@
 header {
-  position: fixed;
-  z-index: 2;
   width: 100%;
   background-color: #FCF4E7;
+}
+
+header.fixed {
+  position: fixed;
+  z-index: 2;
 }
 
 header h1 {
@@ -39,6 +42,10 @@ header nav a.selected {
     background-position: 1rem 50%;
     background-repeat: no-repeat;
     height: 6rem;
+  }
+
+  header:not(.fixed) {
+    position: relative;
   }
 
   header nav {

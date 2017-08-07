@@ -4,7 +4,6 @@
 
 #home_degrade {
   margin: 0 auto;
-  height: 100vh;
 }
 
 #home_degrade:after {
@@ -23,6 +22,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  #home_degrade {
+    height: calc(100vh - 6rem);
+  }
+
   #home_degrade > div {
     width: 90%;
     left: 5%;
@@ -32,6 +35,7 @@
 @media only screen and (min-width: 1024px) {
   #home_degrade {
     position: relative;
+    height: calc(100vh - 5rem);
   }
 
   #home_degrade > div {

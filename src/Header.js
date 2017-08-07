@@ -11,8 +11,9 @@ const renderLink = (href, title, current_path) => {
 
 export default ({ pathname }) => {
   const is_homepage = '/' === pathname
+  const classname = is_homepage ? null : 'fixed'
 
-  return (<header>
+  return (<header className={classname}>
     {(!is_homepage)
       ? (<h1><Link to="/">Back to homepage</Link></h1>)
       : null}
