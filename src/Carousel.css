@@ -2,6 +2,18 @@
   font-size: 2.5rem;
 }
 
+#carousel span {
+  opacity: 0;
+}
+
+#carousel.animated span {
+  transition: opacity 1s ease-out;
+}
+
+#carousel span.visible {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1024px) {
   #carousel {
     padding: 4rem 0;
