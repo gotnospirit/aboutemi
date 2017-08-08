@@ -10,7 +10,7 @@ const onClickHandler = (e) => {
 
   if (elemRect) {
     let y = elemRect.top - bodyRect.top,
-        header = document.querySelector('header'),
+        header = document.querySelector('header.fixed'),
         headerRect = header ? header.getBoundingClientRect() : null
 
     if (headerRect) {
