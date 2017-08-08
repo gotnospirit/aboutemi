@@ -32,7 +32,7 @@ const getProjectIndex = (id) => {
 }
 
 const getPreviousProjectId = (idx) => {
-  if (!idx || 0 === idx) {
+  if (!idx) {
     return null
   }
 
@@ -47,9 +47,9 @@ const getPreviousProjectId = (idx) => {
 }
 
 const getNextProjectId = (idx) => {
-  let max = projects.length - 1
+  let max = projects.length
 
-  if (!idx || idx > max) {
+  if (null === idx || idx > max) {
     return null
   }
 
@@ -80,7 +80,7 @@ export default () => (
             let id = match.params.id
             let project_idx = getProjectIndex(id)
 
-            if (!project_idx) {
+            if (null === project_idx) {
               return renderNotFound()
             }
             return <Work
