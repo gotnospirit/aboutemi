@@ -10,9 +10,10 @@ export default class extends Component {
       displayed : false,
       to : 0,
       startAt : 0,
-      current : 0,
-      scheduler_id : null
+      current : 0
     }
+
+    this.scheduler_id = null
 
     this.scrollFrame = this.scrollFrame.bind(this)
     this.repaint = this.repaint.bind(this)
@@ -21,9 +22,10 @@ export default class extends Component {
   animate(to) {
     this.setState({
       to : to >> 0,
-      startAt : 0,
-      scheduler_id : requestAnimationFrame(this.scrollFrame)
+      startAt : 0
     })
+
+    this.scheduler_id = requestAnimationFrame(this.scrollFrame)
   }
 
   componentDidMount() {
@@ -39,7 +41,7 @@ export default class extends Component {
     window.removeEventListener('resize', this.repaint)
     window.removeEventListener('scroll', this.repaint)
 
-    cancelAnimationFrame(this.state.scheduler_id)
+    cancelAnimationFrame(this.scheduler_id)
   }
 
   repaint() {
@@ -95,7 +97,7 @@ export default class extends Component {
     newState.current = position
 
     if (position !== destination) {
-      newState.scheduler_id = requestAnimationFrame(this.scrollFrame)
+      this.scheduler_id = requestAnimationFrame(this.scrollFrame)
     }
     
     this.setState(newState)
