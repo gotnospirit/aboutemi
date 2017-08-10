@@ -94,6 +94,7 @@
   display: inline-block;
   line-height: 2.18rem;
   position: relative;
+  color: #272727;
 }
 
 #previous_work a:before,
