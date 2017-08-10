@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+#footer a {
+  color: #272727;
+}
+
 #footer #scroll_top {
   background: url(images/scroll_to_top.png) no-repeat 0 0;
   width: 14px;
@@ -25,10 +29,6 @@
 
 #footer #scroll_top:hover {
   cursor: pointer;
-}
-
-#footer ul a:hover {
-    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {

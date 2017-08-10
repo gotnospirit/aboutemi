@@ -24,5 +24,9 @@ body {
 
 a {
     text-decoration: none;
-    color: #272727;
+    color: #d8664e;
+}
+
+a:hover {
+    text-decoration: underline;
 }

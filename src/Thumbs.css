@@ -16,6 +16,11 @@
   width: 302px;
   display: inline-block;
   margin: 0 1rem 3rem 1rem;
+  color: #272727;
+}
+
+#thumbs a:hover {
+  text-decoration: none;
 }
 
 #thumbs a:hover span {

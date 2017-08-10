@@ -23,6 +23,10 @@ header h1 a {
   height: 30px;
 }
 
+header a {
+  color: #272727;
+}
+
 header nav {
   margin: 0 auto;
 }

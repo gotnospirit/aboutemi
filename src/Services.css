@@ -28,15 +28,6 @@
   font-style: normal;
 }
 
-#services address,
-#services address a {
-  color: #d8664e;
-}
-
-#services address a:hover {
-  text-decoration: underline;
-}
-
 #services address a[href^="tel:"] {
   font-weight: 300;
 }
