@@ -8,7 +8,16 @@
   margin: 0 auto;
   position: relative;
   padding-top: 4em;
-  background: url(images/logo_new_color.png) no-repeat 0 3.5em;
+}
+
+#footer > div:after {
+  content: '';
+  width: 198px;
+  height: 32px;
+  background: url(images/logo_new_color.svg) no-repeat 0 0;
+  position: absolute;
+  top: 3.5em;
+  left: 0;
 }
 
 #footer address {

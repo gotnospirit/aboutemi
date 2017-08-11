@@ -10,6 +10,7 @@ header.fixed {
 
 header h1 {
   position: absolute;
+  z-index: 2;
   top: calc(50% - (30px / 2));
   left: 0;
   width: 197px;
@@ -29,17 +30,25 @@ header a {
 
 header nav {
   margin: 0 auto;
+  position: relative;
 }
 
 header nav a.selected {
   font-weight: 700;
 }
 
+header nav:after {
+  content: '';
+  width: 197px;
+  height: 30px;
+  background: url(images/logo_new.svg) no-repeat 0 0;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 0;
+}
+
 @media only screen and (max-width: 1024px) {
   header {
-    background-image: url(images/logo_header.png);
-    background-position: 1rem 50%;
-    background-repeat: no-repeat;
     height: 6rem;
   }
 
@@ -71,7 +80,6 @@ header nav a.selected {
     text-align: right;
     width: 70%;
     height: 100%;
-    background: url(images/logo_header.png) no-repeat 0 50%;
   }
 
   header nav a {
