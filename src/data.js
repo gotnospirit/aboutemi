@@ -63,6 +63,7 @@ const projects = [{
       background: '#fcfbfb',
       presentation: {
         client: 'Eudoxia',
+        url: 'http://www.eudoxia.com/',
         text: [
           'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
           'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'

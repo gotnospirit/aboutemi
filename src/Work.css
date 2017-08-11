@@ -45,6 +45,14 @@
   width: 100%;
 }
 
+#work a {
+  color: #272727;
+}
+
+#work article a:hover {
+  color: #d8664e;
+}
+
 #work article h2,
 #work article h4 {
   font-weight: 300;
@@ -96,7 +104,6 @@
   display: inline-block;
   line-height: 2.18rem;
   position: relative;
-  color: #272727;
 }
 
 #previous_work a:before,

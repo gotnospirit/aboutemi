@@ -28,9 +28,13 @@ const renderFigures = (items) => {
   return items.map(renderFigure)
 }
 
-const renderPresentationTitle = (value, order) => {
+const renderPresentationTitle = (value, order, url) => {
   if (!value) {
     return null
+  }
+
+  if (url) {
+    value = <a href={url} target="_blank" rel="no-follow">{value}</a>
   }
 
   if (1 === order) {
@@ -54,7 +58,7 @@ const renderPresentation = (value) => {
   }
   return (<article>
     {renderPresentationTitle(value.title, 1)}
-    {renderPresentationTitle(value.client, 2)}
+    {renderPresentationTitle(value.client, 2, value.url)}
     {renderPresentationText(value.text)}
     {renderPresentationTitle(value.credits, 3)}
     </article>)
