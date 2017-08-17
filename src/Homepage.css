@@ -4,32 +4,17 @@
 
 #home_degrade {
   margin: 0 auto;
+  position: relative;
 }
 
-#home_degrade:after {
+#home_degrade > div:after {
   background-color: black;
   width: 1px;
   height: 6rem;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -3rem;
   left: 50%;
-}
-
-#home_degrade > div {
-  position: absolute;
-  bottom: 3rem;
-}
-
-@media only screen and (max-width: 1024px) {
-  #home_degrade {
-    height: calc(100vh - 6rem);
-  }
-
-  #home_degrade > div {
-    width: 90%;
-    left: 5%;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -39,6 +24,7 @@
   }
 
   #home_degrade > div {
+    position: absolute;
     width: 36%;
     bottom: 3rem;
     left: 32%;
