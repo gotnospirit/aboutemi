@@ -29,9 +29,9 @@
 }
 
 #footer #scroll_top {
-  background: url(images/scroll_to_top.png) no-repeat 0 0;
+  background: url(images/arrow_top.svg#Calque_1) no-repeat 0 0;
   width: 14px;
-  height: 35px;
+  height: 33px;
   position: absolute;
   right: 0;
 }

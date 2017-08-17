@@ -109,9 +109,9 @@
 #previous_work a:before,
 #next_work a:before {
   content: '';
-  background: url(images/scroll_to_top.png) no-repeat 50%;
-  width: 35px;
-  height: 35px;
+  background: url(images/arrow_top.svg#Calque_1) no-repeat 0 0;
+  width: 14px;
+  height: 33px;
   position: absolute;
   top: 0;
   transform-origin: 50%;
@@ -119,12 +119,12 @@
 
 #previous_work a:before {
   transform: rotateZ(-90deg);
-  left: -2.5rem;
+  left: -2rem;
 }
 
 #next_work a:before {
   transform: rotateZ(90deg);  
-  right: -2.5rem;
+  right: -2rem;
 }
 
 #all_works {
