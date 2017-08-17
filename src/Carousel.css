@@ -17,6 +17,12 @@
 @media only screen and (max-width: 1024px) {
   #carousel {
     padding: 4rem 0;
+    white-space: nowrap;
+    line-height: 2.31rem;
+  }
+
+  #carousel span {
+    display: block;
   }
 }
 
