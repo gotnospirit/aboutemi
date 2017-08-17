@@ -1,13 +1,20 @@
 import React from 'react'
 import Presentation from './Presentation'
-import Artwork from './Artwork'
 import Thumbs from './Thumbs'
+import InternalLink from './InternalLink'
 import './Homepage.css'
 
 export default () => (
   <div id="homepage">
     <Presentation/>
-    <Artwork id="home_degrade" filepath="home_degrade.svg#Calque_2" width={437} height={435} />
+    <div id="home_degrade">
+      <InternalLink href="/#thumbs" label="works" />
+      <div>
+        <svg role="img" viewBox="0 0 437 435">
+          <use xlinkHref="home_degrade.svg#Calque_2" />
+        </svg>
+      </div>
+    </div>
     <Thumbs/>
   </div>
 )
