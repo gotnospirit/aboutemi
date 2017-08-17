@@ -2,7 +2,6 @@
   text-align: left;
   line-height: 1.87rem; /* 30px; */
   font-weight: 300;
-  position: absolute;
 }
 
 #aboutme strong {
@@ -21,15 +20,15 @@
 
 @media only screen and (max-width: 1024px) {
   #aboutme {
-    top: 10rem;
-    left: 5%;
-    width: 80%;
+    padding: 10rem 5% 0 5%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #aboutme {
+    position: absolute;
     top: 40%;
     left: 15%;
+    z-index: 2;
   }
 }

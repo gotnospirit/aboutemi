@@ -1,24 +1,35 @@
 #tshirt {
-   height: 100vh;
    position: relative;
 }
 
-#tshirt > div {
-  position: absolute;
-}
-
 @media only screen and (max-width: 1024px) {
-  #tshirt > div {
-    width: 80%;
-    right: 5%;
-    bottom: 3rem;
+  #tshirt {
+    height: 100vh;
+  }
+
+  #tshirt:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 190px);
+    left: calc(50% - 135px);
+    background: url(images/tshirt_mobile.png) no-repeat 0 0;
+    width: 270px;
+    height: 385px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #tshirt > div {
-    width: 40%;
-    right: 15%;
-    bottom: 2rem;
+  #tshirt {
+    height: 100vh;
+    position: relative;
+  }
+
+  #tshirt:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 160px);
+    background: url(images/tshirt.png) no-repeat 0 0;
+    width: 440px;
+    height: 320px;
   }
 }
