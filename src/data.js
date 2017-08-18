@@ -3,7 +3,10 @@ const basename = '/'
 const projects = [{
   name: 'Restaurant de l\'hôtel de Ville Crissier',
   position: 'art direction, website',
-  image: 'images/thumbs/crissier_off.gif',
+  image: {
+    'on': 'images/thumbs/crissier_on.gif',
+    'off': 'images/thumbs/crissier_off.gif'
+  },
   details: [
     'images/works/00_crissier.jpg',
     {
@@ -85,7 +88,10 @@ const projects = [{
 }, {
   name: 'Furla',
   position: 'art direction, website',
-  image: 'images/thumbs/furla_off.jpg',
+  image: {
+    'on': 'images/thumbs/furla_on.jpg',
+    'off': 'images/thumbs/furla_off.jpg'
+  },
   details: [
     'images/works/00_furla.jpg',
     {
@@ -137,7 +143,10 @@ const projects = [{
 }, {
   name: 'E-Nymphea',
   position: 'identity, website',
-  image: 'images/thumbs/enymphea_off.jpg',
+  image: {
+    'on': 'images/thumbs/enymphea_on.gif',
+    'off': 'images/thumbs/enymphea_off.jpg'
+  },
   details: [
     'images/works/00_enymphea.jpg',
     {
@@ -168,7 +177,10 @@ const projects = [{
 }, {
   name: 'Perrier',
   position: 'art direction, website',
-  image: 'images/thumbs/perrier_off.gif',
+  image: {
+    'on': 'images/thumbs/perrier_on.gif',
+    'off': 'images/thumbs/perrier_off.gif'
+  },
   details: [
     'images/works/00_perrier.jpg',
     {
@@ -204,7 +216,10 @@ const projects = [{
 }, {
   name: 'Mercedes Occasions',
   position: 'identity, website',
-  image: 'images/thumbs/mercedesoccasions_off.gif',
+  image: {
+    'on': 'images/thumbs/mercedesoccasions_on..gif',
+    'off': 'images/thumbs/mercedesoccasions_off.gif'
+  },
   details: [
     'images/works/00_mercedesoccasions.jpg',
     {
@@ -231,7 +246,10 @@ const projects = [{
 }, {
   name: 'TEDx Champs Elysées Women',
   position: 'branding, illustrations',
-  image: 'images/thumbs/tedxcew_off.gif',
+  image: {
+    'on': 'images/thumbs/tedxcew_on.gif',
+    'off': 'images/thumbs/tedxcew_off.gif'
+  },
   details: [
     'images/works/00_tedxcewomen.jpg',
     {
@@ -263,7 +281,10 @@ const projects = [{
 }, {
   name: 'Princesse Tam Tam',
   position: 'art direction, e-magazine',
-  image: 'images/thumbs/tamtam_off.jpg',
+  image: {
+    'on': 'images/thumbs/tamtam_on.jpg',
+    'off': 'images/thumbs/tamtam_off.jpg'
+  },
   details: [
     'images/works/00_tamtam.jpg',
     {
@@ -288,7 +309,10 @@ const projects = [{
 }, {
   name: 'Warner',
   position: 'branding, event',
-  image: 'images/thumbs/warner_off.gif',
+  image: {
+    'on': 'images/thumbs/warner_on.gif',
+    'off': 'images/thumbs/warner_off.gif'
+  },
   details: [
     'images/works/00_warner.jpg',
     {
@@ -317,7 +341,10 @@ const projects = [{
 }, {
   name: 'SkII',
   position: 'art direction, UI, mobile',
-  image: 'images/thumbs/skII_off.jpg',
+  image: {
+    'on': 'images/thumbs/skII_on.jpg',
+    'off': 'images/thumbs/skII_off.jpg'
+  },
   details: [
     'images/works/00_skII.jpg',
     {
