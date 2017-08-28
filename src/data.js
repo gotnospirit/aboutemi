@@ -446,13 +446,7 @@ const services = {
   ]
 }
 
-const getPageTitle = (title) => {
-  let data = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
-  if (title) {
-    data.push(title)
-  }
-  return data.join(' - ')
-}
+const page_title = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
 
 export {
   basename,
@@ -461,5 +455,5 @@ export {
   footer,
   home,
   services,
-  getPageTitle
+  page_title
 }

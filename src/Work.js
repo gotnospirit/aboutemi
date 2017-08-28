@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
-import { getPageTitle } from './data'
+import { getPageTitle } from './utils'
 import MultilineText from './MultilineText'
 import './Work.css'
 

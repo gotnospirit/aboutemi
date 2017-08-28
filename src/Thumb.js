@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import slug from 'slug'
+import { getSlug } from './utils'
 import animation from './animation'
 
 const renderMedias = (image, alt) => {
@@ -28,7 +28,7 @@ export default class extends Component {
 
   render() {
     const { image, name, position } = this.props
-    const id = slug(name, { lower: true })
+    const id = getSlug(name)
 
     return (
       <Link to={'/works/' + id}>
