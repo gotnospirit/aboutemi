@@ -10,7 +10,7 @@ header.fixed {
 
 header h1 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: calc(50% - (30px / 2));
   left: 0;
   width: 197px;
