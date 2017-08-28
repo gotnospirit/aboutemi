@@ -31,6 +31,7 @@ header a {
 header nav {
   margin: 0 auto;
   position: relative;
+  z-index: 2;
 }
 
 header nav a.selected {
