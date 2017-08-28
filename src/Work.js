@@ -117,9 +117,18 @@ const renderNav = (previous_id, next_id, is_last) => {
 }
 
 export default ({ project, previous_project, next_project }) => {
+  const title = getPageTitle(project.name)
+
   return (
     <div id="work">
-      <Helmet title={getPageTitle(project.name)}/>
+      <Helmet
+        title={title}
+        meta={[
+          {
+            'property' : 'og:title',
+            'content' : title
+          }
+        ]}/>
       {renderProject(project.details, previous_project, next_project)}
     </div>
   )

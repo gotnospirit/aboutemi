@@ -69,7 +69,15 @@ export default () => (
   <Router basename={basename}>
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
-        <Helmet base={{ "href" : basename }} title={getPageTitle()}/>
+        <Helmet
+          base={{ "href" : basename }}
+          title={getPageTitle()}
+          meta={[
+            {
+              'property' : 'og:title',
+              'content' : getPageTitle()
+            }
+          ]}/>
         <Polyfill/>
         <Header pathname={location.pathname}/>
         <Switch>
