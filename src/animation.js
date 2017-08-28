@@ -12,6 +12,14 @@ export default {
     },
     showText($) {
       return TweenLite.fromTo($, 1.5, { opacity: 0 }, { opacity: 1, ease: 'Power2.easeInOut' })
+    },
+    showThumb($) {
+      var tl = new TimelineLite();
+
+      tl.fromTo($, 1, { opacity: 0 }, { opacity: 1, ease: 'Power2.easeOut' }, 'start')
+      tl.fromTo($, .5, { y: $.offsetHeight }, { y: 0 }, 'start')
+
+      return tl
     }
   }
 }

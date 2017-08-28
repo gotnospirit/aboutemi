@@ -17,6 +17,7 @@
   display: inline-block;
   margin: 0 1rem 3rem 1rem;
   color: #272727;
+  overflow: hidden;
 }
 
 #thumbs a:hover {
@@ -31,6 +32,11 @@
   font-weight: bold;
   text-transform: uppercase;
   display: block;
+}
+
+#thumbs figure {
+  position: relative;
+  opacity: 0;
 }
 
 #thumbs figure div :first-child {
