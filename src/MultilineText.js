@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ExternalLink from './ExternalLink'
 import EmailLink from './EmailLink'
 
@@ -41,6 +41,25 @@ const renderDescription = (value, urls) => {
   })
 }
 
-export default ({ description, urls=null }) => (
-  <span>{renderDescription(description, urls)}</span>
-)
+export default class extends Component {
+  constructor(props) {
+    super(props)
+
+    this.$content = null
+    this.showAnimator = null
+  }
+
+  componentDidMount() {
+    if (this.showAnimator) {
+      this.showAnimator(this.$content)
+    }
+  }
+
+  render() {
+    const { description, urls, show } = this.props
+
+    this.showAnimator = show || null
+
+    return <span ref={($) => this.$content = $}>{renderDescription(description, urls)}</span>
+  }
+}

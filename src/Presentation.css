@@ -14,7 +14,8 @@
   margin-bottom: .5em;
 }
 
-#presentation span > span {
+#presentation > span,
+#presentation > span > span {
   display: block;
 }
 
