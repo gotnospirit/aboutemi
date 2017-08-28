@@ -20,11 +20,15 @@ export default class extends Component {
     this.$container = null
   }
 
-  render() {
-    const { image, name, position, show } = this.props
-    const id = slug(name, { lower: true })
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.visible && !this.props.visible) {
+      animation.home.showThumb(this.$container)
+    }
+  }
 
-    show.promise.then(() => animation.home.showThumb(this.$container))
+  render() {
+    const { image, name, position } = this.props
+    const id = slug(name, { lower: true })
 
     return (
       <Link to={'/works/' + id}>

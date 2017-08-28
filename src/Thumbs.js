@@ -1,11 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Thumb from './Thumb'
 import { projects } from './data'
 import Masonry from 'react-masonry-component'
-import deferred from 'deferred'
 import './Thumbs.css'
-
-const renderThumbs = (items, show) => items.map(item => <Thumb key={item.name} show={show} {...item} />)
 
 const MASONRY_OPTIONS = {
   horizontalOrder: true,
@@ -13,14 +10,32 @@ const MASONRY_OPTIONS = {
   transitionDuration: 0
 }
 
-export default () => {
-  const show = new deferred()
+export default class extends Component {
+  constructor(props) {
+    super(props)
 
-  return (<section id="thumbs">
-    <div>
-      <Masonry options={MASONRY_OPTIONS} onLayoutComplete={items => show.resolve()}>
-        {renderThumbs(projects, show)}
-      </Masonry>
-    </div>
-  </section>)
+    this.state = {
+      visible: false
+    }
+  }
+
+  shouldComponentUpdate() {
+    return !this.state.visible
+  }
+
+  render() {
+    const visible = this.state.visible
+
+    return (<section id="thumbs">
+      <div>
+        <Masonry
+          options={MASONRY_OPTIONS}
+          onLayoutComplete={items => {
+              this.setState({ visible: true })
+          }}>
+          {projects.map(project => <Thumb key={project.name} visible={visible} {...project} />)}
+        </Masonry>
+      </div>
+    </section>)
+  }
 }
