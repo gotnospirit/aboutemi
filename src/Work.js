@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'react-router-dom'
-import { getPageTitle } from './data'
+import { getPageTitle } from './utils'
 import MultilineText from './MultilineText'
 import './Work.css'
 
@@ -28,9 +28,13 @@ const renderFigures = (items) => {
   return items.map(renderFigure)
 }
 
-const renderPresentationTitle = (value, order) => {
+const renderPresentationTitle = (value, order, url) => {
   if (!value) {
     return null
+  }
+
+  if (url) {
+    value = <a href={url} target="_blank" rel="no-follow">{value}</a>
   }
 
   if (1 === order) {
@@ -54,7 +58,7 @@ const renderPresentation = (value) => {
   }
   return (<article>
     {renderPresentationTitle(value.title, 1)}
-    {renderPresentationTitle(value.client, 2)}
+    {renderPresentationTitle(value.client, 2, value.url)}
     {renderPresentationText(value.text)}
     {renderPresentationTitle(value.credits, 3)}
     </article>)
@@ -113,9 +117,18 @@ const renderNav = (previous_id, next_id, is_last) => {
 }
 
 export default ({ project, previous_project, next_project }) => {
+  const title = getPageTitle(project.name)
+
   return (
     <div id="work">
-      <Helmet title={getPageTitle(project.name)}/>
+      <Helmet
+        title={title}
+        meta={[
+          {
+            'property': 'og:title',
+            'content': title
+          }
+        ]}/>
       {renderProject(project.details, previous_project, next_project)}
     </div>
   )

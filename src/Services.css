@@ -28,15 +28,6 @@
   font-style: normal;
 }
 
-#services address,
-#services address a {
-  color: #d8664e;
-}
-
-#services address a {
-  font-weight: 700;
-}
-
 #services address a[href^="tel:"] {
   font-weight: 300;
 }
@@ -59,21 +50,21 @@
 @media only screen and (min-width: 1024px) {
   #services {
     height: calc(100vh - 13rem);
-    position: relative;
   }
 
   #services > div {
     width: 70%;
     padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #services ul {
-    width: 50%;
-    display: inline-block;
+  #services h3 {
+    width: 100%;
   }
 
+  #services ul,
   #services address {
     width: 50%;
-    display: inline-block;
   }
 }

@@ -16,6 +16,12 @@
   width: 302px;
   display: inline-block;
   margin: 0 1rem 3rem 1rem;
+  color: #272727;
+  overflow: hidden;
+}
+
+#thumbs a:hover {
+  text-decoration: none;
 }
 
 #thumbs a:hover span {
@@ -26,6 +32,24 @@
   font-weight: bold;
   text-transform: uppercase;
   display: block;
+}
+
+#thumbs figure {
+  position: relative;
+  opacity: 0;
+}
+
+#thumbs figure div :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: .7em;
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+
+#thumbs a:hover figure div :first-child {
+  opacity: 1;
 }
 
 #thumbs figcaption {

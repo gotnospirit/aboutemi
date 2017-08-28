@@ -3,7 +3,10 @@ const basename = '/v2/'
 const projects = [{
   name: 'Restaurant de l\'hôtel de Ville Crissier',
   position: 'art direction, website',
-  image: 'images/thumbs/crissier.jpg',
+  image: {
+    'on': 'images/thumbs/crissier_on.gif',
+    'off': 'images/thumbs/crissier_off.gif'
+  },
   details: [
     'images/works/00_crissier.jpg',
     {
@@ -18,19 +21,20 @@ const projects = [{
         credits: 'Photo by: Restaurant de l\'hôtel de Ville Crissier'
       }
     },
-    'images/works/01_jbm.jpg',
+    'images/works/01_crissier.jpg',
     {
-      background: '#f8f7f7',
-      title: 'Mobile',
+      background: '#fffcf5',
       figures: [
-        'images/works/02_jbm.png',
+        'images/works/02_crissier.jpg',
+        'images/works/03_crissier.jpg',
+        'images/works/04_crissier.jpg',
       ]
     }
   ]
 }, {
   name: 'Agence Soon x JB Martin',
   position: 'UX, art direction, website',
-  image: 'images/thumbs/soon_martin.jpg',
+  image: 'images/thumbs/jbm_off.jpg',
   details: [
     'images/works/00_jbm.jpg',
     {
@@ -57,7 +61,7 @@ const projects = [{
 }, {
   name: 'Eudoxia',
   position: 'branding, art direction, website',
-  image: 'images/thumbs/eudoxia.jpg',
+  image: 'images/thumbs/eudoxia_off.gif',
   details: [
     'images/works/00_eudoxia.jpg',
     {
@@ -84,7 +88,10 @@ const projects = [{
 }, {
   name: 'Furla',
   position: 'art direction, website',
-  image: 'images/thumbs/furla.jpg',
+  image: {
+    'on': 'images/thumbs/furla_on.jpg',
+    'off': 'images/thumbs/furla_off.jpg'
+  },
   details: [
     'images/works/00_furla.jpg',
     {
@@ -110,7 +117,7 @@ const projects = [{
 }, {
   name: 'Digiposte',
   position: 'art direction, UI',
-  image: 'images/thumbs/digiposte.jpg',
+  image: 'images/thumbs/digiposte_off.gif',
   details: [
     'images/works/00_digiposte.gif',
     {
@@ -124,17 +131,22 @@ const projects = [{
       }
     },
     {
+      background: '#e3f0fc',
       figures: [
-        'images/works/01_digiposte.gif',
-        'images/works/02_digiposte.gif',
-        'images/works/03_digiposte.gif'
+        'https://www.youtube.com/embed/dsGV0NTNgO0?rel=0&amp;showinfo=0'
       ]
-    }
+    },
+    'images/works/01_digiposte.gif',
+    'images/works/02_digiposte.gif',
+    'images/works/03_digiposte.gif'
   ]
 }, {
   name: 'E-Nymphea',
   position: 'identity, website',
-  image: 'images/thumbs/nymphea.jpg',
+  image: {
+    'on': 'images/thumbs/enymphea_on.gif',
+    'off': 'images/thumbs/enymphea_off.jpg'
+  },
   details: [
     'images/works/00_enymphea.jpg',
     {
@@ -165,7 +177,10 @@ const projects = [{
 }, {
   name: 'Perrier',
   position: 'art direction, website',
-  image: 'images/thumbs/perrier.jpg',
+  image: {
+    'on': 'images/thumbs/perrier_on.gif',
+    'off': 'images/thumbs/perrier_off.gif'
+  },
   details: [
     'images/works/00_perrier.jpg',
     {
@@ -181,7 +196,7 @@ const projects = [{
     },
     {
       figures: [
-        'images/works/01_perrier.jpg',
+        'images/works/01_perrier.gif',
         'images/works/02_perrier.jpg',
         'images/works/03_perrier.jpg',
         'images/works/04_perrier.gif',
@@ -201,7 +216,10 @@ const projects = [{
 }, {
   name: 'Mercedes Occasions',
   position: 'identity, website',
-  image: 'images/thumbs/mercedes.jpg',
+  image: {
+    'on': 'images/thumbs/mercedesoccasions_on..gif',
+    'off': 'images/thumbs/mercedesoccasions_off.gif'
+  },
   details: [
     'images/works/00_mercedesoccasions.jpg',
     {
@@ -219,7 +237,7 @@ const projects = [{
       background: '#e3f0fc',
       figures: [
         'images/works/01_mercedesoccasions.jpg',
-        'images/works/02_mercedesoccasions.jpg',
+        'images/works/02_mercedesoccasions.png',
         'images/works/03_mercedesoccasions.jpg',
         'images/works/04_mercedesoccasions.jpg',
       ]
@@ -228,7 +246,10 @@ const projects = [{
 }, {
   name: 'TEDx Champs Elysées Women',
   position: 'branding, illustrations',
-  image: 'images/thumbs/tedx.jpg',
+  image: {
+    'on': 'images/thumbs/tedxcew_on.gif',
+    'off': 'images/thumbs/tedxcew_off.gif'
+  },
   details: [
     'images/works/00_tedxcewomen.jpg',
     {
@@ -260,7 +281,10 @@ const projects = [{
 }, {
   name: 'Princesse Tam Tam',
   position: 'art direction, e-magazine',
-  image: 'images/thumbs/tam_tam.jpg',
+  image: {
+    'on': 'images/thumbs/tamtam_on.jpg',
+    'off': 'images/thumbs/tamtam_off.jpg'
+  },
   details: [
     'images/works/00_tamtam.jpg',
     {
@@ -285,7 +309,10 @@ const projects = [{
 }, {
   name: 'Warner',
   position: 'branding, event',
-  image: 'images/thumbs/warner.jpg',
+  image: {
+    'on': 'images/thumbs/warner_on.gif',
+    'off': 'images/thumbs/warner_off.gif'
+  },
   details: [
     'images/works/00_warner.jpg',
     {
@@ -314,7 +341,10 @@ const projects = [{
 }, {
   name: 'SkII',
   position: 'art direction, UI, mobile',
-  image: 'images/thumbs/skii.jpg',
+  image: {
+    'on': 'images/thumbs/skII_on.jpg',
+    'off': 'images/thumbs/skII_off.jpg'
+  },
   details: [
     'images/works/00_skII.jpg',
     {
@@ -410,19 +440,13 @@ const services = {
     'food',
     'travel',
     'latte',
-    'super-herts',
+    'super-heros',
     'organic cosmetics',
     'photography'
   ]
 }
 
-const getPageTitle = (title) => {
-  let data = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
-  if (title) {
-    data.push(title)
-  }
-  return data.join(' - ')
-}
+const page_title = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
 
 export {
   basename,
@@ -431,5 +455,5 @@ export {
   footer,
   home,
   services,
-  getPageTitle
+  page_title
 }

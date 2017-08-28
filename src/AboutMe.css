@@ -2,38 +2,35 @@
   text-align: left;
   line-height: 1.87rem; /* 30px; */
   font-weight: 300;
-  position: absolute;
 }
 
 #aboutme strong {
   font-size: 2.31rem; /* 37px; */
-  background-color: #272727;
+  background-color: #939292;
   color: #fff;
   padding: .2em .5em;
   display: inline-block;
   font-weight: 700;
   margin-bottom: .5em;
+  white-space: nowrap;
 }
 
-#aboutme a {
-  color: #d8664e;
-}
-
+#aboutme span,
 #aboutme span > span {
   display: block;
 }
 
 @media only screen and (max-width: 1024px) {
   #aboutme {
-    top: 10rem;
-    left: 5%;
-    width: 80%;
+    padding: 10rem 5% 0 5%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #aboutme {
+    position: absolute;
     top: 40%;
     left: 15%;
+    z-index: 2;
   }
 }

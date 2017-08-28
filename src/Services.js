@@ -24,7 +24,7 @@ export default () => {
         <span><EmailLink address={address}/></span>
         <span><PhoneLink {...phone}/></span>
       </address>
+      <Carousel/>
     </div>
-    <Carousel/>
   </section>)
 }

@@ -67,7 +67,7 @@ export default class extends Component {
 
   render() {
     return <p id="carousel" className={this.state.running ? 'animated' : null}>
-        Some stuff I love : <span className={this.state.visible ? 'visible' : null}>{this.state.message}</span>.
+        Some stuff I love : <span className={this.state.visible ? 'visible' : null}>{this.state.message}</span>
       </p>
   }
 }

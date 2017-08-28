@@ -4,31 +4,32 @@
 
 #home_degrade {
   margin: 0 auto;
+  position: relative;
 }
 
-#home_degrade:after {
+#home_degrade a {
+  color: #272727;
+}
+
+#home_degrade > div:after {
   background-color: black;
-  width: .1rem;
+  width: 1px;
   height: 6rem;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -3rem;
   left: 50%;
-}
-
-#home_degrade > div {
-  position: absolute;
-  bottom: 3rem;
 }
 
 @media only screen and (max-width: 1024px) {
   #home_degrade {
-    height: calc(100vh - 6rem);
+    margin-bottom: 3rem;
   }
 
-  #home_degrade > div {
-    width: 90%;
-    left: 5%;
+  #home_degrade a {
+    position: absolute;
+    bottom: 4rem;
+    left: calc(50% - 1.3rem);
   }
 }
 
@@ -38,7 +39,12 @@
     height: calc(100vh - 5rem);
   }
 
+  #home_degrade a {
+    display: none;
+  }
+
   #home_degrade > div {
+    position: absolute;
     width: 36%;
     bottom: 3rem;
     left: 32%;
