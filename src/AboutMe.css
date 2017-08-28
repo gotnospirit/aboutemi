@@ -12,8 +12,10 @@
   display: inline-block;
   font-weight: 700;
   margin-bottom: .5em;
+  white-space: nowrap;
 }
 
+#aboutme span,
 #aboutme span > span {
   display: block;
 }
