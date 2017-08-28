@@ -39,21 +39,18 @@ export default class extends Component {
   constructor(props) {
     super(props)
 
-    this.$content = null
-    this.showAnimator = null
+    this.$ = null
   }
 
   componentDidMount() {
-    if (this.showAnimator) {
-      this.showAnimator(this.$content)
+    if (this.props.show) {
+      this.props.show(this.$)
     }
   }
 
   render() {
-    const { description, urls, show } = this.props
+    const { description, urls } = this.props
 
-    this.showAnimator = show || null
-
-    return <span ref={($) => this.$content = $}>{renderDescription(description, urls)}</span>
+    return <span ref={($) => this.$ = $}>{renderDescription(description, urls)}</span>
   }
 }

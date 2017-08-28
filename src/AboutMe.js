@@ -8,19 +8,21 @@ export default class extends Component {
   constructor(props) {
     super(props)
 
-    this.$title = null
+    this.$ = null
   }
 
   componentDidMount() {
-    animation.about.showTitle(this.$title)
+    animation.about.showTitle(this.$)
   }
 
   render() {
     return (<section id="aboutme">
-      <strong ref={($) => this.$title = $}>
+      <strong ref={($) => this.$ = $}>
         <span>About me.</span>
       </strong>
-      <MultilineText show={animation.about.showText} {...about_me}/>
+      <MultilineText
+        show={animation.about.showText}
+        {...about_me}/>
     </section>)
   }
 }

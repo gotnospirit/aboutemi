@@ -17,12 +17,12 @@ export default class extends Component {
   constructor(props) {
     super(props)
 
-    this.$container = null
+    this.$ = null
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.visible && !this.props.visible) {
-      animation.home.showThumb(this.$container)
+      animation.home.showThumb(this.$)
     }
   }
 
@@ -32,7 +32,7 @@ export default class extends Component {
 
     return (
       <Link to={'/works/' + id}>
-        <figure ref={($) => this.$container = $}>
+        <figure ref={($) => this.$ = $}>
           {renderMedias(image, name)}
           <figcaption>
             <span>{name}</span>
