@@ -74,8 +74,8 @@ export default () => (
           title={getPageTitle()}
           meta={[
             {
-              'property' : 'og:title',
-              'content' : getPageTitle()
+              'property': 'og:title',
+              'content': getPageTitle()
             }
           ]}/>
         <Polyfill/>
