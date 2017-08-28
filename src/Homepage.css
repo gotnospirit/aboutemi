@@ -40,9 +40,7 @@
   }
 
   #home_degrade a {
-    position: relative;
-    bottom: calc(100vh - 13rem);
-    z-index: 2;
+    display: none;
   }
 
   #home_degrade > div {
