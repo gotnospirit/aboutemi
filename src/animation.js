@@ -25,8 +25,8 @@ const showText = ($) => {
 const hideTitle = ($) => {
   var tl = new TimelineLite()
 
-  tl.fromTo($.firstChild, .5, { opacity: 0, ease: 'Power2.easeOut' })
-  tl.fromTo($, 1, {
+  tl.to($.firstChild, .5, { opacity: 0, ease: 'Power2.easeOut' })
+  tl.to($, 1, {
     width: 0,
     paddingLeft: 0,
     paddingRight: 0,
