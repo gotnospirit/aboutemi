@@ -21,6 +21,27 @@
   left: 50%;
 }
 
+#presentation {
+  font-size: 1.25rem; /* 20px; */
+  text-align: left;
+  line-height: 1.87rem; /* 30px; */
+  font-weight: 300;
+}
+
+#presentation strong {
+  font-size: 2.31rem; /* 37px; */
+  background-color: #fff;
+  padding: .2em .5em;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+#presentation > span,
+#presentation > span > span {
+  display: block;
+}
+
 @media only screen and (max-width: 1024px) {
   #home_degrade {
     margin-bottom: 3rem;
@@ -30,6 +51,10 @@
     position: absolute;
     bottom: 4rem;
     left: calc(50% - 1.3rem);
+  }
+
+  #presentation {
+    padding: 5rem 0 5rem 5%;
   }
 }
 
@@ -48,5 +73,12 @@
     width: 36%;
     bottom: 3rem;
     left: 32%;
+  }
+
+  #presentation {
+    position: absolute;
+    top: 45%;
+    left: calc(50% + 8em);
+    z-index: 2;
   }
 }

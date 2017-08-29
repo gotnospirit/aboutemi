@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ExternalLink from './ExternalLink'
 import EmailLink from './EmailLink'
+import { withAnimation } from './AnimationRouter'
 
 const renderText = (value, urls) => {
   if (!urls) {
@@ -35,7 +36,7 @@ const renderDescription = (value, urls) => {
   return value.map((v, index) => <span key={index}>{renderText(v, urls)}</span>)
 }
 
-export default class extends Component {
+export default withAnimation(class extends Component {
   constructor(props) {
     super(props)
 
@@ -46,6 +47,10 @@ export default class extends Component {
     if (this.props.show) {
       this.props.show(this.$)
     }
+
+    if (this.props.hide) {
+      this.props.leave(() => this.props.hide(this.$))
+    }
   }
 
   render() {
@@ -53,4 +58,4 @@ export default class extends Component {
 
     return <span ref={($) => this.$ = $}>{renderDescription(description, urls)}</span>
   }
-}
+})

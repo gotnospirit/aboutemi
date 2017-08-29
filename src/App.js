@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import Header from './Header'
 import Footer from './Footer'
@@ -12,7 +12,7 @@ import Polyfill from './Polyfill'
 import NotFound from './NotFound'
 import { basename } from './data'
 import { getPageTitle } from './utils'
-import Router from './Router'
+import Router from './AnimationRouter'
 import './App.css'
 
 export default () => (

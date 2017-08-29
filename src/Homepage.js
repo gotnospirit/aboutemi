@@ -2,11 +2,13 @@ import React from 'react'
 import Presentation from './Presentation'
 import Thumbs from './Thumbs'
 import InternalLink from './InternalLink'
+import { home } from './data'
+import animation from './animation'
 import './Homepage.css'
 
 export default () => (
   <div id="homepage">
-    <Presentation/>
+    <Presentation id="presentation" animation={animation.home} data={home} />
     <div id="home_degrade">
       <InternalLink href="/#thumbs" label="works" />
       <div>
