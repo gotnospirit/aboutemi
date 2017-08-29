@@ -31,7 +31,7 @@ export default class extends Component {
         <Masonry
           options={MASONRY_OPTIONS}
           onLayoutComplete={items => {
-              this.setState({ visible: true })
+            this.setState({ visible: true })
           }}>
           {projects.map(project => <Thumb key={project.name} visible={visible} {...project} />)}
         </Masonry>

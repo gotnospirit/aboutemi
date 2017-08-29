@@ -12,6 +12,7 @@ import Polyfill from './Polyfill'
 import NotFound from './NotFound'
 import { basename } from './data'
 import { getPageTitle } from './utils'
+import Router from './Router'
 import './App.css'
 
 export default () => (
@@ -19,14 +20,12 @@ export default () => (
     <Route key="root" render={({ history, location }) => (
       <Camera key="viewport" action={history.action} pathname={location.pathname}>
         <Helmet
-          base={{ "href" : basename }}
+          base={{ href: basename }}
           title={getPageTitle()}
-          meta={[
-            {
-              'property': 'og:title',
-              'content': getPageTitle()
-            }
-          ]}/>
+          meta={[{
+            property: 'og:title',
+            content: getPageTitle()
+          }]}/>
         <Polyfill/>
         <Header is_homepage={'/' === location.pathname}/>
         <Switch>
