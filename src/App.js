@@ -17,8 +17,8 @@ import './App.css'
 
 export default () => (
   <Router basename={basename}>
-    <Route key="root" render={({ history, location }) => (
-      <Camera key="viewport" action={history.action} pathname={location.pathname}>
+    <Route render={({ history, location }) => (
+      <Camera action={history.action} pathname={location.pathname}>
         <Helmet
           base={{ href: basename }}
           title={getPageTitle()}
