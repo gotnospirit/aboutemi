@@ -28,7 +28,7 @@ export default () => (
             }
           ]}/>
         <Polyfill/>
-        <Header pathname={location.pathname}/>
+        <Header is_homepage={'/' === location.pathname}/>
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/about" component={About} />

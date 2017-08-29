@@ -1,16 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import ExternalLink from './ExternalLink'
 import InternalLink from './InternalLink'
 import EmailLink from './EmailLink'
 import './Header.css'
 
-const renderLink = (href, title, current_path) => {
-  return (<Link to={href} className={0 === current_path.indexOf(href) ? 'selected' : null}>{title}</Link>)
+const renderLink = (href, title) => {
+  return <NavLink to={href} activeClassName="selected">{title}</NavLink>
 }
 
-export default ({ pathname }) => {
-  const is_homepage = '/' === pathname
+export default ({ is_homepage }) => {
   const classname = is_homepage ? null : 'fixed'
 
   return (<header className={classname}>
@@ -20,8 +19,8 @@ export default ({ pathname }) => {
     <nav>
       {(is_homepage) 
         ? <InternalLink href="/#thumbs" label="works" />
-        : renderLink('/works', 'works', pathname)}
-      {renderLink('/about', 'about', pathname)}
+        : renderLink('/works', 'works')}
+      {renderLink('/about', 'about')}
       <ExternalLink href="http://www.inestimable.me/" label="my blog" />
       <EmailLink address="emi.tan@gmail.com" label="contact" />
     </nav>
