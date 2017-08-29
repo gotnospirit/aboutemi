@@ -123,12 +123,10 @@ export default ({ project, previous_project, next_project }) => {
     <div id="work">
       <Helmet
         title={title}
-        meta={[
-          {
-            'property': 'og:title',
-            'content': title
-          }
-        ]}/>
+        meta={[{
+          property: 'og:title',
+          content: title
+        }]}/>
       {renderProject(project.details, previous_project, next_project)}
     </div>
   )

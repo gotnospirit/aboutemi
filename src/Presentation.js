@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import MultilineText from './MultilineText'
-import { home } from './data'
-import animation from './animation'
-import './Presentation.css'
+import { withAnimation } from './AnimationRouter'
 
-export default class extends Component {
+export default withAnimation(class extends Component {
   constructor(props) {
     super(props)
 
@@ -12,17 +10,24 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    animation.home.showTitle(this.$)
+    const { animation, leave } = this.props
+
+    animation.showTitle(this.$)
+    leave(() => animation.hideTitle(this.$))
   }
 
   render() {
-    return (<section id="presentation">
+    const { id, animation, data } = this.props
+    const { title, ...multiline } = data
+
+    return (<section id={id}>
       <strong ref={($) => this.$ = $}>
-        <span>Hi.</span>
+        <span>{title}</span>
       </strong>
       <MultilineText
-        show={animation.home.showText}
-        {...home}/>
+        show={animation.showText}
+        hide={animation.hideText}
+        {...multiline}/>
     </section>)
   }
-}
+})

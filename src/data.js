@@ -379,6 +379,7 @@ const projects = [{
 }]
 
 const about_me = {
+  title : 'About me.',
   description : [
     'I\'m a French independent Digital Art Director. I create brand identities,',
     'websites/mobile interfaces, digital campaign... I am curious and love',
@@ -414,6 +415,7 @@ const footer = {
 }
 
 const home = {
+  title : 'Hi.',
   description : [
     'I\'m Emilie Tan, Digital Art Director',
     'based in Paris, France and I\'m willing',

@@ -25,19 +25,19 @@ const showText = ($) => {
 const hideTitle = ($) => {
   var tl = new TimelineLite()
 
-  tl.fromTo($.firstChild, .5, { opacity: 0, ease: 'Power2.easeOut' })
-  tl.fromTo($, 1, {
+  tl.to($.firstChild, .5, { opacity: 0, ease: 'Power2.easeOut' }, 'tag')
+  tl.to($, .5, {
     width: 0,
     paddingLeft: 0,
     paddingRight: 0,
     ease: 'Power2.easeInOut'
-  })
+  }, 'tag')
 
   return tl
 }
 
 const hideText = ($) => {
-  return TweenLite.to($, 1.5, { opacity: 0, ease: 'Power2.easeInOut' })
+  return TweenLite.to($, .5, { opacity: 0, ease: 'Power2.easeInOut' })
 }
 
 export default {
@@ -45,23 +45,7 @@ export default {
     showTitle,
     showText,
     hideTitle,
-    hideText,
-    showThumb($) {
-      var tl = new TimelineLite()
-
-      tl.fromTo($, 1, { opacity: 0 }, { opacity: 1, ease: 'Power2.easeOut' }, 'start')
-      tl.fromTo($, .5, { y: $.offsetHeight }, { y: 0 }, 'start')
-
-      return tl
-    },
-    hideThumb($) {
-      var tl = new TimelineLite()
-
-      tl.to($, 1, { opacity: 0, ease: 'Power2.easeOut' }, 'start')
-      tl.to($, .5, { y: 0 }, 'start')
-
-      return tl
-    }
+    hideText
   },
   about: {
     showTitle,
@@ -70,5 +54,23 @@ export default {
     hideText,
     showArtwork: showText,
     hideArtwork: hideText
+  },
+  thumbs: {
+    show($) {
+      var tl = new TimelineLite()
+
+      tl.fromTo($, 1, { opacity: 0 }, { opacity: 1, ease: 'Power2.easeOut' }, 'tag')
+      tl.fromTo($, .5, { y: $.offsetHeight }, { y: 0 }, 'tag')
+
+      return tl
+    },
+    hide($) {
+      var tl = new TimelineLite()
+
+      tl.to($, .5, { opacity: 0, ease: 'Power2.easeOut' }, 'tag')
+      tl.to($, .5, { y: $.offsetHeight }, 'tag')
+
+      return tl
+    }
   }
 }
