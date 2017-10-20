@@ -13,12 +13,12 @@ const projects = [{
       background: '#fcfbfb',
       presentation: {
         title: 'Les ateliers Moonshine',
-        client: 'Restaurant de l\'hôtel de Ville Crissier',
+        client: 'The Hotel de ville Crissier restaurant',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+          'The Hôtel de ville de Crissier restaurant in Switzerland offers exceptional service and Franck Giovannini’s, the successor to Benoit Violier a Michelin three star chef signature cuisine',
+'The objective of the graphic redesign of the website was both to offer a design that matches the quality of the dishes served and to meet in responsive development standards. The idea was to enhance this elaborate cuisine with warm colors. Large visuals / full-screen videos of the leader in action give the user an immersive experience that acts as a mouth-watering teaser.'
         ],
-        credits: 'Photo by: Restaurant de l\'hôtel de Ville Crissier'
+        credits: 'Photo by: The Hôtel de ville de Crissier restaurant'
       }
     },
     'images/works/01_crissier.jpg',
@@ -32,9 +32,12 @@ const projects = [{
     }
   ]
 }, {
-  name: 'Agence Soon x JB Martin',
+  name: 'JB Martin x Agence Soon',
   position: 'UX, art direction, website',
-  image: 'images/thumbs/jbm_off.jpg',
+  image: {
+    'on': 'images/thumbs/jbm_on.jpg',
+    'off': 'images/thumbs/jbm_off.jpg'
+  },
   details: [
     'images/works/00_jbm.jpg',
     {
@@ -42,9 +45,10 @@ const projects = [{
       presentation: {
         title: 'Agence soon by kaliop',
         client: 'JB Martin',
+		 url: 'https://www.jbmartinparis.com/',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+          'JB Martin is a high quality French women shoes brand that offers chic and modern collections and a line of leatherware made with a sense of detail.',
+          'The new positioning of the brand is reflected with intuitive navigation as well as clean and elegant atmosphere. JB Martin\'s aim is to offer an unprecedented experience online shopping with presenting exclusive collections, services and particular content on trends, styles of the day. Powered by Magento, the website is responsively designed for an optimal user experience on desktop, tablet or mobile.'
         ],
         credits: 'Photo by: JB Martin'
       }
@@ -61,16 +65,20 @@ const projects = [{
 }, {
   name: 'Eudoxia',
   position: 'branding, art direction, website',
-  image: 'images/thumbs/eudoxia_off.gif',
+  image: {
+    'on': 'images/thumbs/eudoxia_on.gif',
+    'off': 'images/thumbs/eudoxia_off.gif'
+  },
   details: [
     'images/works/00_eudoxia.jpg',
     {
       background: '#fcfbfb',
       presentation: {
         client: 'Eudoxia',
+	    url: 'http://www.eudoxia.com/',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimale sur desktop, tablette ou mobile.'
+          'Eudoxia is a new brand of French cosmetics that draws its powers from the virtues of plants that grow naturally between the Mediterranean sea and the summits of the Valley of Wonders.',
+'The direct sale channel is the most practical way to communicate on the originality and unique richness of the brand. For this we choose WooCommerce, a Wordpress online marketing solution. This solution allowed us to enhance the range by presenting the products in their natural setting. We produced a photo spread to highlight the origins of the cosmetic formulas as well as the passion and know-how of the brand\'s creator. All the while making sales the priority.'
         ],
         credits: 'Photo by: Yollico Saito'
       }
@@ -99,8 +107,8 @@ const projects = [{
       presentation: {
         client: 'Furla',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'Furla makes bags and handbags, shoes, and small leather goods. The brand\'s DNA is Italian, as is its taste for quality, which emanates from all collections and creations, where colors, patterns and materials delicately together.',
+'Proposal for a mini-website presentation on the iconic Candy Bag. Colorful and simple, this website highlights the entire collection as well as the evolution and manufacturing timeline.'
         ]
       }
     },
@@ -123,10 +131,12 @@ const projects = [{
     {
       background: '#fcfbfb',
       presentation: {
-        title: 'Agence Ekino Fullsix',
+        title: 'Ekino Agency Fullsix Havas Group',
         client: 'Digiposte',
+		url: 'https://secure.digiposte.fr/identification-plus',
         text: [
-          'Plus qu\'un simple espace de stockage, Digiposte est le coffre numérique proposé par La Poste qui vous accompagne dans l\'organisation et le stockage de tous vos documents importants grâce à une utilisation intuitive. Il vous permet de sauvegarder gratuitement et à vie 5 Go de données personnelles.'
+          'More than just a storage space, Digiposte is the digital safe deposit box offered by La Poste that helps you to easily organize your administrative documents, thanks to a user-friendy interface. It allows you to save 5 GB of personal data permanently or free of charge.',
+'In collaboration with a UX team, we created an ergonomic platform and an intuitive interface, playing closer attention to the color contrasts of images and texts, thus making reading easiler. The result is a smooth course, clear entrances and AA-rated content accessibility.'
         ]
       }
     },
@@ -154,9 +164,10 @@ const projects = [{
       presentation: {
         title: 'Spa Collexion / Sequoiasoft',
         client: 'E-Nymphea',
+		url: 'http://www.sequoiasoft.com/solutions/e-nymphea-module-reservation-en-ligne-spa/',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'Directly linked to E-NYMPHEA, the management tool of choice for spas and wellness centers, E-Nymphea Collexion optimises online booking to boost the wellness field.E-Nymphea Collexion is an innovation created by Sequoiasoft and Spa Collexion.',
+'We worked on a fully-responsive design platform with a simple structure that fits each wellness center and spa. Each showcase can be customized. The content is displayed through different elements that can be moved, added or removed.'
         ]
       }
     },
@@ -186,12 +197,11 @@ const projects = [{
     {
       background: '#fcfbfb',
       presentation: {
-        client: 'Perrier',
+        client: 'Perrier®',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'PERRIER® is a one hundred year old bubbly mineral water whose unique sparkle is recognized through out the world.','Creation of a atmosphere revolving around cocktail recipes using this sparkling water. Lifestyle illustrations and visuals combine to give a friendly and relaxed ambiance.'
         ],
-        credits: 'Photo by: Perrier'
+        credits: 'Photo by: Perrier®'
       }
     },
     {
@@ -225,11 +235,10 @@ const projects = [{
     {
       background: '#fcfbfb',
       presentation: {
-        title: 'Agence proximity bbdo',
+        title: 'Proximity bbdo Agency ',
         client: 'Mercedes occasions',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          '"Les Occasions Exclusives" are VIP meetings that offer the best rental vehicles at competitive rates and access to premium services.','Presentation and catalog produced in an original mood using symbols that convey exclusivity, strength and luxury.'
         ]
       }
     },
@@ -256,9 +265,9 @@ const projects = [{
       background: '#fcfbfb',
       presentation: {
         client: 'TEDx Champs Elysées Women',
+		url: 'http://tedxchampselysees.com/tedxchampselyseeswomen/',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'The first Edition of TEDxCEWomen is an independent event organized under license from TED. This event aims to promote the sharing of ideas through conferences.','Design and creation of illustrations / portraits introducing the program’s speakers different personalities, based on the theme "Invented Here".'
         ],
         credits: 'Photo by: Olivier Ezratty & Emanuel Vivier'
       }
@@ -292,8 +301,7 @@ const projects = [{
       presentation: {
         client: 'Princess Tam Tam',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'Princess Tam Tam is a French brand with detailed, creative and fashionable know-how, young and feminine created by women for women!','Creation of editorial and graphic guidelines of the online magazine. We used a lookbook approach and the lifestyle spirit to bring the collection and the brand to life.'
         ]
       }
     },
@@ -318,11 +326,11 @@ const projects = [{
     {
       background: '#fcfbfb',
       presentation: {
-        title: 'Agence monsieur white',
+        title: 'monsieur white Agency',
         client: 'Warner',
+		url: 'https://legolasgamer.com/roman-photo-de-la-soiree-mkc-le-mortal-kombat-club/',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'For the launch of Mortel Kombat’s game, the MKC invites the gamer, journalist and blogger communities to fight IRL on a giant screen in a secret place.', 'We created an event website especially for gamers featuring games, puzzles and challenges to get participants to accept their invitations.'
         ],
         credits: 'Photo by: Monsieur White / Warner'
       }
@@ -352,8 +360,7 @@ const projects = [{
       presentation: {
         client: 'SKII',
         text: [
-          'Marque de chaussures française haut de gamme pour femme, elle propose des collections de souliers chics et modernes ainsi qu\'une ligne de maroquinerie confectionnée avec un sens du détail affûté.',
-          'Le nouveau positionnement de la marque se reflète avec une navigation intuitive, une ambiance graphique épurée et élégante. La volonté de JB Martin est de proposer une expérience inédite de shopper en ligne tout en présentant des collections exclusives, du service et un contenu particulier sur les tendances et les styles du moment. Propulsé sous Magento, le site est conçu en responsive pour une expérience utilisateur optimatile sur desktop, tablette ou mobile.'
+          'SK-II, a Japanese cosmetics brand, combines state-of-the-art technology and something know-how with the powers of nature.','Mobile skin diagnosis. This app allows to choose the right treatment according to skin type. The selection of recommended products linked directly to the e-shop. The simplicity and playfulness of the application are reflected in a plain yet refined design.'
         ]
       }
     },

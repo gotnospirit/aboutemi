@@ -12,7 +12,7 @@
     position: absolute;
     top: calc(50% - 190px);
     left: calc(50% - 135px);
-    background: url(images/tshirt_mobile.png) no-repeat 0 0;
+    background: url(images/tshirt_mobile.svg) no-repeat 0 0;
     width: 270px;
     height: 385px;
   }
@@ -28,7 +28,7 @@
     content: '';
     position: absolute;
     top: calc(50% - 160px);
-    background: url(images/tshirt.png) no-repeat 0 0;
+    background: url(images/tshirt.svg) no-repeat 0 0;
     width: 440px;
     height: 320px;
   }
