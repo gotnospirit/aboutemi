@@ -15,7 +15,7 @@ const projects = [{
         title: 'Les ateliers Moonshine',
         client: 'The Hotel de ville Crissier restaurant',
         text: [
-          'The Hôtel de ville de Crissier restaurant in Switzerland offers exceptional service and Franck Giovannini’s, the successor to Benoit Violier a Michelin three star chef signature cuisine',
+          'The Hotel de ville Crissier restaurant in Switzerland offers exceptional service and Franck Giovannini’s, the successor to Benoit Violier a Michelin three star chef signature cuisine.',
           'The objective of the graphic redesign of the website was both to offer a design that matches the quality of the dishes served and to meet in responsive development standards. The idea was to enhance this elaborate cuisine with warm colors. Large visuals / full-screen videos of the leader in action give the user an immersive experience that acts as a mouth-watering teaser.'
         ],
         credits: 'Photo by: The Hôtel de ville de Crissier restaurant'
@@ -166,7 +166,7 @@ const projects = [{
         client: 'E-Nymphea',
         url: 'http://www.sequoiasoft.com/solutions/e-nymphea-module-reservation-en-ligne-spa/',
         text: [
-          'Directly linked to E-NYMPHEA, the management tool of choice for spas and wellness centers, E-Nymphea Collexion optimises online booking to boost the wellness field.E-Nymphea Collexion is an innovation created by Sequoiasoft and Spa Collexion.',
+          'Directly linked to E-NYMPHEA, the management tool of choice for spas and wellness centers, E-Nymphea Collexion optimises online booking to boost the wellness field. E-Nymphea Collexion is an innovation created by Sequoiasoft and Spa Collexion.',
           'We worked on a fully-responsive design platform with a simple structure that fits each wellness center and spa. Each showcase can be customized. The content is displayed through different elements that can be moved, added or removed.'
         ]
       }
