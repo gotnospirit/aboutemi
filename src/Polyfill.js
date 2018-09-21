@@ -7,7 +7,6 @@ export default class extends Component {
 
     scriptjs(src, () => {
       if (window.svg4everybody) {
-        console.log('svg4everybody loaded')
         window.svg4everybody()
       }
     })

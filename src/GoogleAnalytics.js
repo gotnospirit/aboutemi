@@ -28,7 +28,6 @@ const withTracker = (WrappedComponent, options = {}, properties = {}) => {
     }
 
     render() {
-      console.log('options', options);
       return <WrappedComponent {...this.props} {...properties} />;
     }
   };
