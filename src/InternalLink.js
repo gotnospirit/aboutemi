@@ -8,6 +8,7 @@ const onClickHandler = (e) => {
       el = document.getElementById(target_id),
       elemRect = el ? el.getBoundingClientRect() : null
 
+  e.preventDefault();
   if (elemRect) {
     let y = elemRect.top - bodyRect.top,
         header = document.querySelector('header.fixed'),
@@ -21,6 +22,7 @@ const onClickHandler = (e) => {
       window.animate(y)
     }
   }
+  return false;
 };
 
 export default ({ href, label }) => (
