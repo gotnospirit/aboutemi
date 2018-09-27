@@ -99,14 +99,8 @@ export default class extends Component {
     if (position !== destination) {
       this.scheduler_id = requestAnimationFrame(this.scrollFrame)
     }
-    
-    this.setState(newState)
-  }
 
-  componentWillUpdate(nextProps, nextState) {
-    if ('PUSH' === nextProps.action && nextProps.pathname !== this.props.pathname) {
-      this.animate(0)
-    }
+    this.setState(newState)
   }
 
   render() {

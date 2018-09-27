@@ -54,10 +54,14 @@ export default class extends Component {
 
   confirm(_, callback) {
     if (this.animate) {
-      this.navigate = callback
+      this.navigate = () => {
+        callback(true)
+        window.animate(0)
+      }
       this.leave.play(0)
     } else {
       callback(true)
+      window.animate(0)
     }
   }
 
