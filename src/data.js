@@ -1,6 +1,40 @@
 const basename = '/'
 
 const projects = [{
+  name: 'Eudonet',
+  position: 'UX, UI, website',
+  image: {
+    'on': 'images/thumbs/eudonet_on.gif',
+    'off': 'images/thumbs/eudonet_off.jpg'
+  },
+  details: [
+    'images/works/00_eudonet.jpg', {
+      background: '#fcfbfb',
+      presentation: {
+        title: 'Fullsixup Agency Havas Group',
+        client: 'Eudonet',
+        url: 'https://fr.eudonet.com/',
+        text: [
+          'Eudonet offers adapted solutions for customer relations. They developed a customizable CRM tool that\'s appropriate for all sectors of activity.',
+          'Design of a graphic and dynamic environment. The challenge were reflect the values of the company and the relationship with their customers such as proximity, creativity, agility, humility and innovation. Working hand in hand with the Communication, Product/Trade and Management teams allowed us to identify external and internal needs and to improve effectively their commercial approach.'
+        ]
+      }
+    },
+    'images/works/01_eudonet.jpg',
+    {
+      background: '#fffcf5',
+      figures: [
+        'images/works/02_eudonet.jpg'
+      ]
+    },
+    {
+      background: '#fcfbfb',
+      figures: [
+        'https://www.youtube.com/embed/PPrbde6q9-0?rel=0&amp;showinfo=0'
+      ]
+    }
+  ]
+}, {
   name: 'Restaurant de l\'hôtel de Ville Crissier',
   position: 'art direction, website',
   image: {
