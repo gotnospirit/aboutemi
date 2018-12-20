@@ -36,7 +36,7 @@ const projects = [{
   ]
 }, {
   name: 'Restaurant de l\'hôtel de Ville Crissier',
-  position: 'art direction, website',
+  position: 'UI, website',
   image: {
     'on': 'images/thumbs/crissier_on.gif',
     'off': 'images/thumbs/crissier_off.gif'
@@ -67,7 +67,7 @@ const projects = [{
   ]
 }, {
   name: 'JB Martin x Agence Soon',
-  position: 'UX, art direction, website',
+  position: 'UX, UI, Website',
   image: {
     'on': 'images/thumbs/jbm_on.jpg',
     'off': 'images/thumbs/jbm_off.jpg'
@@ -98,7 +98,7 @@ const projects = [{
   ]
 }, {
   name: 'Eudoxia',
-  position: 'branding, art direction, website',
+  position: 'Branding, art direction, UI, website',
   image: {
     'on': 'images/thumbs/eudoxia_on.gif',
     'off': 'images/thumbs/eudoxia_off.gif'
@@ -129,7 +129,7 @@ const projects = [{
   ]
 }, {
   name: 'Furla',
-  position: 'art direction, website',
+  position: 'UI, website',
   image: {
     'on': 'images/thumbs/furla_on.jpg',
     'off': 'images/thumbs/furla_off.jpg'
@@ -158,7 +158,7 @@ const projects = [{
   ]
 }, {
   name: 'Digiposte',
-  position: 'art direction, UI',
+  position: 'UI, plateform',
   image: 'images/thumbs/digiposte_off.gif',
   details: [
     'images/works/00_digiposte.gif',
@@ -186,7 +186,7 @@ const projects = [{
   ]
 }, {
   name: 'E-Nymphea',
-  position: 'identity, website',
+  position: 'Branding, UI, website, Backoffice design',
   image: {
     'on': 'images/thumbs/enymphea_on.gif',
     'off': 'images/thumbs/enymphea_off.jpg'
@@ -221,7 +221,7 @@ const projects = [{
   ]
 }, {
   name: 'Perrier',
-  position: 'art direction, website',
+  position: 'Illustrations, UI, website',
   image: {
     'on': 'images/thumbs/perrier_on.gif',
     'off': 'images/thumbs/perrier_off.gif'
@@ -259,7 +259,7 @@ const projects = [{
   ]
 }, {
   name: 'Mercedes Occasions',
-  position: 'identity, website',
+  position: 'Illustrations, UI, website',
   image: {
     'on': 'images/thumbs/mercedesoccasions_on..gif',
     'off': 'images/thumbs/mercedesoccasions_off.gif'
@@ -323,7 +323,7 @@ const projects = [{
   ]
 }, {
   name: 'Princesse Tam Tam',
-  position: 'art direction, e-magazine',
+  position: 'Branding, UI, e-magazine',
   image: {
     'on': 'images/thumbs/tamtam_on.jpg',
     'off': 'images/thumbs/tamtam_off.jpg'
@@ -350,7 +350,7 @@ const projects = [{
   ]
 }, {
   name: 'Warner',
-  position: 'branding, event',
+  position: 'Branding, CX, event',
   image: {
     'on': 'images/thumbs/warner_on.gif',
     'off': 'images/thumbs/warner_off.gif'
@@ -422,9 +422,9 @@ const projects = [{
 const about_me = {
   title : 'About me.',
   description : [
-    'I\'m a French independent Digital Art Director. I create brand identities,',
-    'websites/mobile interfaces, digital campaign... I am curious and love',
-    'to improve your most beautiful stories. I\'m available for selective',
+    'I\'m a French independent UI/UX Designer. I create ',
+    'websites/mobiles interfaces, branding... I am curious and love ',
+    'to improve your most beautiful stories. I\'m available for selective ',
     'projects and collaborations. Feel free to send me an email.'
   ],
   urls : {
@@ -458,20 +458,20 @@ const footer = {
 const home = {
   title : 'Hi.',
   description : [
-    'I\'m Emilie Tan, Digital Art Director',
-    'based in Paris, France and I\'m willing',
+    'I\'m Emilie Tan, UI/UX Designer ',
+    'based in Paris, France and I\'m willing ',
     'to work everywhere in the world.'
   ]
 }
 
 const services = {
   items : [
-    'Art Direction',
-    'UX/UI design',
-    'Web design',
-    'Mobile design',
+    'UI/UX',
     'Branding',
-    'Sketches / illustrations'
+    'Web design',
+    'Mobile',
+    'Art Direction',
+    'Sketch/illustrations'
   ],
   resume : 'http://www.aboutemi.com/pdf/resume_etan.pdf',
   address : 'emi.tan@gmail.com',
