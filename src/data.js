@@ -158,7 +158,7 @@ const projects = [{
   ]
 }, {
   name: 'Digiposte',
-  position: 'UI, plateform',
+  position: 'UI, platform',
   image: 'images/thumbs/digiposte_off.gif',
   details: [
     'images/works/00_digiposte.gif',
@@ -382,7 +382,7 @@ const projects = [{
   ]
 }, {
   name: 'SkII',
-  position: 'art direction, UI, mobile',
+  position: 'UI, mobile',
   image: {
     'on': 'images/thumbs/skII_on.jpg',
     'off': 'images/thumbs/skII_off.jpg'
@@ -423,7 +423,7 @@ const about_me = {
   title : 'About me.',
   description : [
     'I\'m a French independent UI/UX Designer. I create ',
-    'websites/mobiles interfaces, branding... I am curious and love ',
+    'websites/mobile interfaces, branding... I am curious and love ',
     'to improve your most beautiful stories. I\'m available for selective ',
     'projects and collaborations. Feel free to send me an email.'
   ],
