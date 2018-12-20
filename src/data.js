@@ -30,7 +30,7 @@ const projects = [{
     {
       background: '#fcfbfb',
       figures: [
-        'https://www.youtube.com/embed/PPrbde6q9-0?rel=0&amp;showinfo=0'
+        'https://www.youtube.com/embed/xGq1PowYX5c?rel=0&amp;showinfo=0'
       ]
     }
   ]
