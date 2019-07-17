@@ -489,7 +489,7 @@ const services = {
   ]
 }
 
-const page_title = ['Aboutemi', 'Art Direction', 'Interface Design', 'Emilie Tan']
+const page_title = ['Aboutemi', 'Art Direction', 'Interface Designer', 'UI/UX', 'Emilie Tan']
 
 export {
   basename,
