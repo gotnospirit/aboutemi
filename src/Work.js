@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { getPageTitle } from './utils'
 import MultilineText from './MultilineText'
@@ -74,8 +74,8 @@ const renderStringProject = (item, previous, next, index, max) => {
 }
 
 const renderComplexProject = (item, previous, next, index, max) => {
-  return (<section key={index} style={{ 
-      backgroundColor : item.background 
+  return (<section key={index} style={{
+      backgroundColor : item.background
     }}>
       <div>
         {renderTitle(item.title)}
@@ -93,8 +93,8 @@ const renderProject = (items, previous, next) => {
 
   let max = items.length
 
-  return items.map((item, index) => ('string' === typeof(item)) 
-    ? renderStringProject(item, previous, next, index, max) 
+  return items.map((item, index) => ('string' === typeof(item))
+    ? renderStringProject(item, previous, next, index, max)
     : renderComplexProject(item, previous, next, index, max))
 }
 
